@@ -29,10 +29,11 @@ $(function () {
 
         $.ajax({
             type: "POST",
-            url: "php/form_process.php",
+            url: "https://hooks.airtable.com/workflows/v1/genericWebhook/appiMmcfX2VmFQ1OW/wflX9sFiAoWUvVXMK/wtrCTE4rfBeOaud9m",
             data: formData,
             success: function (response) {
-                if (response === 'success') {
+                // Assuming Airtable returns a status or response indicating success
+                if (response === 'success' || response.includes('200')) {
                     if (actionInput.length > 0) {
                         subscribeButton.html('SUBSCRIBE NOW');
                         const toastSubscribe = new bootstrap.Toast(successMsgSubscribe[0]);
@@ -46,6 +47,12 @@ $(function () {
                     submitForm.html('Send Message');
                     subscribeButton.html('SUBSCRIBE NOW');
                 }
+            },
+            error: function () {
+                // Handle any errors
+                errtoast.show();
+                submitForm.html('Send Message');
+                subscribeButton.html('SUBSCRIBE NOW');
             }
         });
 
