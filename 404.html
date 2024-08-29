@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>404 Error | MEF</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Reset body and html */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px; /* Slightly increased base font size */
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+        }
+
+        /* Full page background and centering container */
+        .outerwrap-404 {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("image/cmp.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Translucent overlay */
+        .outerwrap-404::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #10100f91; /* Black overlay with 50% opacit. Alternative color :- #2d2b259e*/
+            z-index: 1; /* Place overlay below the text */
+        }
+
+        /* Centered content */
+        .error_main {
+            text-align: center;
+            color: #fff;
+            z-index: 2; /* Place text above the overlay */
+            position: relative;
+        }
+
+        .error_main h6 {
+            font-size: 5rem; /* Adjusted font size */
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+            text-transform: capitalize;
+            text-shadow: 2px 2px 4px rgb(255 255 255 / 70%); /* Character shading */
+        }
+
+        .error_main img {
+            max-width: 250px; /* Adjusted image size */
+            height: auto;
+            margin-bottom: 1.2rem;
+        }
+
+        .error_main h2 {
+            font-size: 3rem; /* Adjusted font size */
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            padding-bottom: 10px;
+            text-transform: capitalize;
+            text-shadow: 2px 2px 4px rgb(255 255 255 / 70%); /* Character shading */
+        }
+
+        .icon-studio {
+            margin-bottom: 1.5rem; /* Adjusted space between logo and button */
+        }
+
+        .icon-studio img {
+            max-width: 250px; /* Adjusted logo size */
+            height: auto;
+        }
+
+        .error_main a {
+            background: #e2a750;
+            color: #fff;
+            display: inline-block;
+            font-size: 1.125rem; /* Adjusted font size */
+            font-weight: 500;
+            height: 50px; /* Adjusted button height */
+            line-height: 50px;
+            padding: 0 1.25rem; /* Adjusted padding */
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            text-shadow: 2px 2px 4px rgb(255 255 255 / 70%); /* Character shading */
+        }
+
+        .error_main a:hover {
+            background: #555555;
+        }
+
+        /* Additional CSS to handle inconsistencies */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 400;
+            color: #ffffff;
+            margin-top: 0;
+            font-style: normal;
+            text-shadow: 2px 2px 4px rgb(255 255 255 / 70%) /* Character shading */
+        }
+
+        .h6, h6 {
+            font-size: 1.125rem; /* Adjusted font size */
+        }
+
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+
+        img, svg {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Wrapper Start -->
+    <div class="page-wraper" id="main-home">
+        <div class="outerwrap-404">
+            <div class="error_main">
+                <h6>error</h6>
+                <img src="image/404.png" alt="404 Error Image">
+                <h2>Sorry, The Page You Are Looking For Does Not Exist</h2>
+                <div class="icon-studio">
+                    <img src="assets/img/logo.png" alt="Logo">
+                </div>
+                <a href="index.html">Home Page</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page Wrapper End -->
+    
+</body>
+</html>
