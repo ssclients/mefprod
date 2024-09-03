@@ -372,13 +372,13 @@
 		}
 	});
 	
-	/*------ 16. scrollUp ------*/
-	$.scrollUp({
-		scrollText: '<i class="fa fa-angle-up"></i>',
-		easingType: 'linear',
-		scrollSpeed: 900,
-		animation: 'fade'
-	});
+	// /*------ 16. scrollUp ------*/
+	// $.scrollUp({
+	// 	scrollText: '<i class="fa fa-angle-up"></i>',
+	// 	easingType: 'linear',
+	// 	scrollSpeed: 900,
+	// 	animation: 'fade'
+	// });
 
 	/*------ 17. Trigger Menu ------*/
     var slideMenu = function (container, trigger) {
