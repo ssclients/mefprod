@@ -2166,26 +2166,72 @@
                                     </video>
                                 </div>
                                 <div class="video-overlay">
-                                    <div class="content-wrapper">
-                                        <h1>Welcome to Our Website</h1>
-                                        <p>Your journey starts here.</p>
-                                        <br>
-                                        <br>
-                                        <a href="#next-section" class="welcome-button">Get Started</a>
-                                        <div class="scroll-down">
-                                            <a href="#next-section">
-                                                <span>&#8595;</span> <!-- Down arrow icon -->
-                                            </a>
-                                        </div>
-                                    </div>
+                                  <div class="content-wrapper">
+                                    <br>
+                                    <br>
+                                    <h1 style="color: #D3A329; margin: 0;">"Welcome to Our Website"</h1>
+                                    <style>
+                                      h1 {
+                                        color: #D3A329;
+                                        font-size: 100px;
+                                        margin: 0;
+                                      }
+
+                                      /* Large displays (desktops) */
+                                      @media (min-width: 1201px) {
+                                        h1 {
+                                          font-size: 100px;
+                                        }
+                                      }
+
+                                      /* Medium displays (tablets, small desktops) */
+                                      @media (max-width: 1200px) {
+                                        h1 {
+                                          font-size: 80px;
+                                        }
+                                      }
+
+                                      /* Small displays (large phones, tablets in portrait mode) */
+                                      @media (max-width: 992px) {
+                                        h1 {
+                                          font-size: 60px;
+                                        }
+                                      }
+
+                                      /* Extra small displays (phones, small tablets) */
+                                      @media (max-width: 768px) {
+                                        h1 {
+                                          font-size: 40px;
+                                        }
+                                      }
+
+                                      /* Very small displays (small phones) */
+                                      @media (max-width: 576px) {
+                                        h1 {
+                                          font-size: 30px;
+                                        }
+                                      }
+                                    </style>
+
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <a href="#next-section" class="welcome-button"><strong>Get Started</strong></a>
+                                      <div class="scroll-down">
+                                          <a href="#next-section">
+                                              <span>&#8595;</span> <!-- Down arrow icon -->
+                                          </a>
+                                      </div>
+                                  </div>
                                 </div>
                             </section>
                                 <style>
-                                  /* Fullscreen video container */
+                                  /* Adjusted fullscreen video container */
                                   #hero-video-section {
                                       position: relative;
                                       width: 100%;
-                                      height: 100vh;
+                                      height: 120vh; /* Increased height to 120% of the viewport */
                                       overflow: hidden;
                                   }
 
@@ -2206,7 +2252,7 @@
                                       left: 50%;
                                       width: 100%;
                                       height: 100%;
-                                      object-fit: cover;
+                                      object-fit: cover; /* Ensures the video covers the entire container */
                                       transform: translate(-50%, -50%);
                                   }
 
@@ -2301,12 +2347,6 @@
                                       .welcome-button {
                                           font-size: 16px;
                                       }
-                                  }
-
-                                  /* Next section to demonstrate scrolling */
-                                  #next-section {
-                                      text-align: center;
-                                  }
                                 </style>
                                 <script>
                                   // Optionally, you can add JavaScript to dynamically adjust video cropping if needed
