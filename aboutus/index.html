@@ -1577,84 +1577,93 @@
 
 				<br>
                 <br>
-                <section>
-                  <div class="grid-container">
-                    <div class="row">
-                      <div class="column">
-                        <img src="../image/dreamscape.png" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img src="../image/the-abyss.png" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img src="../image/po.jpeg" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img src="../image/cover-2-the-labyrinthine.png" class="hover-shadow">
-                      </div>
-                    </div>
-                
-                    <br>
-                
-                    <div class="row">
-                      <div class="column">
-                        <img src="../image/dreamscape.png" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img src="../image/the-abyss.png" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img src="../image/po.jpeg" class="hover-shadow">
-                      </div>
-                      <div class="column">
-                        <img src="../image/cover-2-the-labyrinthine.png" class="hover-shadow">
-                      </div>
-                    </div>
-                  </div>
-                
-                  <style>
-                    * {
-                      box-sizing: border-box;
-                    }
-                
-                    .grid-container {
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      padding-left: 20px;
-                      padding-right: 20px;
-                    }
-                
-                    .row {
-                      display: flex;
-                      justify-content: center;
-                      width: 100%;
-                      max-width: 1200px; /* Increased max-width to enlarge the grid */
-                    }
-                
-                    .row > .column {
-                      padding: 0 10px; /* Slightly increased padding for better spacing */
-                    }
-                
-                    .column {
-                      flex: 1;
-                      max-width: 22.5%; /* Increased column width to make images larger */
-                    }
-                
-                    img {
-                      width: 100%; /* Ensures images take up the full width of their container */
-                      height: auto; /* Maintains image aspect ratio */
-                    }
-                
-                    img.hover-shadow {
-                      transition: 0.3s;
-                    }
-                
-                    .hover-shadow:hover {
-                      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                    }
-                  </style>
-                </section>
+				<section>
+					<div class="grid-container">
+					  <div class="row">
+						<div class="column">
+						  <img src="../image/dreamscape.png" class="hover-shadow">
+						</div>
+						<div class="column">
+						  <img src="../image/the-abyss.png" class="hover-shadow">
+						</div>
+						<div class="column">
+						  <img src="../image/po.jpeg" class="hover-shadow">
+						</div>
+						<div class="column">
+						  <img src="../image/cover-2-the-labyrinthine.png" class="hover-shadow">
+						</div>
+					  </div>
+				  
+					  <!-- No need for <br> tag, using margin for separation -->
+					  <div class="row">
+						<div class="column">
+						  <img src="../image/dreamscape.png" class="hover-shadow">
+						</div>
+						<div class="column">
+						  <img src="../image/the-abyss.png" class="hover-shadow">
+						</div>
+						<div class="column">
+						  <img src="../image/po.jpeg" class="hover-shadow">
+						</div>
+						<div class="column">
+						  <img src="../image/cover-2-the-labyrinthine.png" class="hover-shadow">
+						</div>
+					  </div>
+					</div>
+				  
+					<style>
+					  * {
+						box-sizing: border-box;
+					  }
+				  
+					  .grid-container {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						padding-left: 20px;
+						padding-right: 20px;
+					  }
+				  
+					  .row {
+						display: flex;
+						justify-content: center;
+						width: 100%;
+						max-width: 1200px; /* Increased max-width to enlarge the grid */
+					  }
+				  
+					  .row + .row {
+						margin-top: 30px; /* Add margin to separate the rows */
+					  }
+				  
+					  .row > .column {
+						padding: 0 10px; /* Slightly increased padding for better spacing */
+					  }
+				  
+					  .column {
+						flex: 1;
+						max-width: 22.5%; /* Increased column width to make images larger */
+					  }
+				  
+					  .column img {
+						width: 100%; /* Ensures images take up the full width of their container */
+						height: auto; /* Maintains image aspect ratio */
+					  }
+				  
+					  /* Only apply hover-shadow to images inside .column */
+					  .column img.hover-shadow {
+						transition: 0.3s;
+						transform-origin: 0 0; /* Sets the origin for scaling (top-left corner) */
+					  }
+				  
+					  .column img.hover-shadow:hover {
+						transform: scale(1.1); /* Zoom effect using transform */
+						box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+					  }
+					</style>
+				  </section>
+				  
+			  
+				  
                 
                   <br>
                   <br>
