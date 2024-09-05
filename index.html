@@ -238,18 +238,23 @@
   }
   //});
 };</script>
-<style type="text/css" data-type="vc_custom-css">
+<style type="text/css">
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .edgtf-custom-font-holder-main {
   position: relative;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
+  overflow: hidden; /* Ensure that any overflow is hidden */
+  margin: 50px 0; /* Space out the sections */
 }
 
-.edgtf-custom-font-holder-main {
-  position: relative;
-}
-
-.edgtf-custom-font-holder-main:after {
+/* Royal Flush Style */
+.edgtf-custom-font-holder-main.royal-flush:after {
   content: "Royal Flush";
   position: absolute;
   display: block;
@@ -261,46 +266,76 @@
   -webkit-text-fill-color: #fff;
   -webkit-text-stroke: 1px currentColor;
   color: currentColor;
-  -webkit-text-fill-color: #fff;
-  clip-path: inset(0 0 0 100%);
-  -webkit-clip-path: inset(0 0 0 100%);
+  clip-path: inset(0 0 100% 0);
+  -webkit-clip-path: inset(0 0 100% 0);
+  transition: clip-path 2s cubic-bezier(0.83, 0.2, 0.25, 1), -webkit-text-fill-color 2s cubic-bezier(0.83, 0.2, 0.25, 1);
 }
 
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
+/* Torn Plaid Style */
+.edgtf-custom-font-holder-main.torn-plaid:after {
+  content: "Torn\nPlaid"; /* Adds a line break between Torn and Plaid */
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-text-fill-color: #f00; /* Red fill for this one */
+  -webkit-text-stroke: 1px currentColor;
+  color: currentColor;
+  white-space: pre; /* Ensures the line break is rendered */
+  clip-path: inset(0 0 100% 0);
+  -webkit-clip-path: inset(0 0 100% 0);
+  transition: clip-path 2s cubic-bezier(0.83, 0.2, 0.25, 1), -webkit-text-fill-color 2s cubic-bezier(0.83, 0.2, 0.25, 1);
+}
+
+/* Blue Wilderness Style */
+.edgtf-custom-font-holder-main.blue-wilderness {
+  position: relative;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 100px; /* Adjust as needed */
+  line-height: 150px;
+  letter-spacing: -7px;
+  color: #000; /* Main text color */
+  text-align: center;
+  overflow: hidden; /* Ensure overflow is hidden for animation */
+}
+
+/* Styling the :after pseudo-element for the hollow effect */
+.edgtf-custom-font-holder-main.blue-wilderness:after {
+  content: "Blue\nWilderness"; /* Use \n for a manual line break */
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-text-fill-color: #00f; /* Blue fill color */
+  -webkit-text-stroke: 1px currentColor; /* Hollow effect */
+  color: currentColor;
+  white-space: pre; /* Keeps the manual line break */
+  clip-path: inset(0 0 100% 0); /* Hides the :after text initially */
+  -webkit-clip-path: inset(0 0 100% 0); /* Hides the :after text initially */
+  transition: clip-path 2s cubic-bezier(0.83, 0.2, 0.25, 1), -webkit-text-fill-color 2s cubic-bezier(0.83, 0.2, 0.25, 1);
+}
+
+/* Media Query for high-contrast mode */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .edgtf-custom-font-holder-main:after {
     color: #fff !important;
   }
 }
 
-.edgtf-custom-font-holder-main.edgtf-appear:after {
-  animation: edgtf-animate-custom-font-main 2s cubic-bezier(0.83, 0.2, 0.25, 1) forwards;
+/* Animation class */
+.edgtf-custom-font-holder-main.edgtf-appear {
+  clip-path: inset(0 0 0 0); /* Reveal the text */
+  -webkit-clip-path: inset(0 0 0 0); /* Reveal the text */
 }
 
-@keyframes edgtf-animate-custom-font-main {
-  0% {
-    clip-path: inset(0 0 100% 0);
-    -webkit-clip-path: inset(0 0 100% 0);
-  }
-
-  50% {
-    clip-path: inset(0 0 0 0);
-    -webkit-clip-path: inset(0 0 0 0);
-  }
-
-  100% {
-    clip-path: inset(100% 0 0 0);
-    -webkit-clip-path: inset(100% 0 0 0);
-  }
-}
-
-@media only screen and (min-width: 680px) and (max-width: 768px) {
-
-  .leitmotif.tp-bullets {
-    margin-top: 40px;
-  }
-}
 </style>
+
 <style type="text/css" data-type="vc_shortcodes-custom-css">
 .vc_custom_1567766713503 {
   padding-top: 10px !important;
@@ -2558,7 +2593,7 @@
                           class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0">
                           <div class="vc_column-inner">
                             <div class="wpb_wrapper">
-                              <h2 class="edgtf-custom-font-holder edgtf-custom-font-holder-main edgtf-cf-1741  edgtf-cf-hollow-effect  "
+                              <h2 class="edgtf-custom-font-holder edgtf-custom-font-holder-main edgtf-cf-1741 royal-flush edgtf-cf-hollow-effect  "
                                 style="font-family: Barlow Condensed - San Serif;font-size: 100px;line-height: 150px;letter-spacing: -7px"
                                 data-item-class="edgtf-cf-1741"
                                 data-font-size-1600="100px"
@@ -2752,6 +2787,426 @@
                       </div>
                     </div>
                   </div>
+
+                  <br>
+                  <br>
+
+                  <div class="edgtf-row-grid-section-wrapper edgtf-content-aligment-center">
+                    <div class="edgtf-row-grid-section">
+                      <div
+                        class="vc_row wpb_row vc_row-fluid vc_row-o-content-middle vc_row-flex">
+                        <div
+                        class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0">
+                        <div class="vc_column-inner">
+                          <div class="wpb_wrapper">
+                            <div class="edgtf-single-image-holder">
+                              <div class="edgtf-si-inner">
+                                <img width="400" height="720" src="./image/torn-plaid-upcoming.jpeg" class="attachment-full size-full" alt="z" loading="lazy"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        <div
+                          class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0">
+                          <div class="vc_column-inner">
+                            <div class="wpb_wrapper">
+                              <h2 class="edgtf-custom-font-holder edgtf-custom-font-holder-main edgtf-cf-1741 torn-plaid  edgtf-cf-hollow-effect  "
+                                style="font-family: Barlow Condensed - San Serif;font-size: 100px;line-height: 150px;letter-spacing: -7px"
+                                data-item-class="edgtf-cf-1741"
+                                data-font-size-1600="100px"
+                                data-font-size-1024="100px"
+                                data-font-size-768="80px" data-font-size-680="60px"
+                                data-line-height-1600="100px"
+                                data-line-height-1024="100px"
+                                data-line-height-768="80px"
+                                data-line-height-680="60px"
+                                data-letter-spacing-1024="-5px"
+                                data-letter-spacing-768="-4px"
+                                data-letter-spacing-680="1px">
+                                Torn <br> Plaid </h2>
+                              <div
+                                class="edgtf-elements-holder   edgtf-one-column  edgtf-responsive-mode-768 ">
+                                <div class="edgtf-eh-item    "
+                                  data-item-class="edgtf-eh-custom-8199"
+                                  data-1400-1600="0 20% 60px">
+                                  <div class="edgtf-eh-item-inner">
+                                    <div class="edgtf-eh-item-content edgtf-eh-custom-8199"
+                                      style="padding: 0 10% 60px">
+                                      <div
+                                        class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                          <p style="text-align: center; color:white;">
+                                            Apparently we had reached a
+                                            great height in the
+                                            atmosphere, for the sky was
+                                            a dead black, and the stars
+                                            had ceased mas</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                <div
+                                  class="wpb_column vc_column_container vc_col-sm-12">
+                                  <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                      <div
+                                        class="edgtf-elements-holder   edgtf-three-columns  edgtf-responsive-mode-680 ">
+                                        <div class="edgtf-eh-item   edgtf-horizontal-alignment-center "
+                                          data-item-class="edgtf-eh-custom-1615"
+                                          data-1025-1399="0 0 0 3%"
+                                          data-681-768="0 0 0 10%"
+                                          data-680="0 0 0 27.2%">
+                                          <div
+                                            class="edgtf-eh-item-inner">
+                                            <div class="edgtf-eh-item-content edgtf-eh-custom-1615"
+                                              style="padding: 0 0 0 20%">
+                                              <div
+                                                class="edgtf-single-image-holder   ">
+                                                <div
+                                                  class="edgtf-si-inner">
+                                                  <img width="141"
+                                                    height="61"
+                                                    src="wp-content/uploads/2019/08/h1-img-02.png"
+                                                    class="attachment-full size-full"
+                                                    alt="x"
+                                                    loading="lazy" />
+                                                </div>
+                                              </div>
+                                              <div class="vc_empty_space"
+                                                style="height: 50px">
+                                                <span
+                                                  class="vc_empty_space_inner"></span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="edgtf-eh-item   edgtf-horizontal-alignment-center "
+                                          data-item-class="edgtf-eh-custom-2500"
+                                          data-1025-1399="0 0 0 13%"
+                                          data-769-1024="0 0 0 24%"
+                                          data-681-768="0 0 0 18%"
+                                          data-680="0 0 0 29.4%">
+                                          <div
+                                            class="edgtf-eh-item-inner">
+                                            <div class="edgtf-eh-item-content edgtf-eh-custom-2500"
+                                              style="padding: 0 0 0 20%">
+                                              <div
+                                                class="edgtf-single-image-holder   ">
+                                                <div
+                                                  class="edgtf-si-inner">
+                                                  <img width="130"
+                                                    height="106"
+                                                    src="wp-content/uploads/2019/08/h1-img-03.png"
+                                                    class="attachment-full size-full"
+                                                    alt
+                                                    loading="lazy" />
+                                                </div>
+                                              </div>
+                                              <div class="vc_empty_space"
+                                                style="height: 50px">
+                                                <span
+                                                  class="vc_empty_space_inner"></span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="edgtf-eh-item   edgtf-horizontal-alignment-center "
+                                          data-item-class="edgtf-eh-custom-9261"
+                                          data-1025-1399="0px 0 0 17%"
+                                          data-681-768="0 0 0 19%"
+                                          data-680="0 0 0 27.2%">
+                                          <div
+                                            class="edgtf-eh-item-inner">
+                                            <div class="edgtf-eh-item-content edgtf-eh-custom-9261"
+                                              style="padding: 0 0 0 20%">
+                                              <div
+                                                class="edgtf-single-image-holder   ">
+                                                <div
+                                                  class="edgtf-si-inner">
+                                                  <img width="141"
+                                                    height="61"
+                                                    src="wp-content/uploads/2019/08/h1-img-04.png"
+                                                    class="attachment-full size-full"
+                                                    alt="s"
+                                                    loading="lazy" />
+                                                </div>
+                                              </div>
+                                              <div class="vc_empty_space"
+                                                style="height: 50px">
+                                                <span
+                                                  class="vc_empty_space_inner"></span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-content-middle vc_row-flex edgtf-content-aligment-center">
+                                <div
+                                  class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12">
+                                  <div class="vc_column-inner">
+                                    <div class="wpb_wrapper">
+                                      <div
+                                        class="edgtf-elements-holder   edgtf-one-column  edgtf-responsive-mode-768 ">
+                                        <div class="edgtf-eh-item   edgtf-horizontal-alignment-center "
+                                          data-item-class="edgtf-eh-custom-4049"
+                                          data-1400-1600="0 21% 0 30%"
+                                          data-1025-1399="0 21% 0 27%"
+                                          data-769-1024="0 21% 80px 33%"
+                                          data-681-768="0 21% 80px 28%"
+                                          data-680="0 0 80px 7.2%">
+                                          <div
+                                            class="edgtf-eh-item-inner">
+                                            <div class="edgtf-eh-item-content edgtf-eh-custom-4049"
+                                              style="padding: 0 21% 0 31%">
+                                              <div
+                                                class="edgtf-single-image-holder   ">
+                                                <div
+                                                  class="edgtf-si-inner">
+                                                  <img width="265"
+                                                    height="39"
+                                                    src="wp-content/uploads/2019/08/h1-img-05.png"
+                                                    class="attachment-full size-full"
+                                                    alt="s"
+                                                    loading="lazy" />
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="edgtf-row-grid-section-wrapper edgtf-content-aligment-center">
+                          <div class="edgtf-row-grid-section">
+                            <div
+                              class="vc_row wpb_row vc_row-fluid vc_row-o-content-middle vc_row-flex">
+                              <div
+                                class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0">
+                                <div class="vc_column-inner">
+                                  <div class="wpb_wrapper">
+                                    <h2 class="edgtf-custom-font-holder edgtf-custom-font-holder-main edgtf-cf-1741  blue-wilderness edgtf-cf-hollow-effect"
+                                      style="font-family: Barlow Condensed - San Serif;font-size: 100px;line-height: 150px;letter-spacing: -7px"
+                                      data-item-class="edgtf-cf-1741"
+                                      data-font-size-1600="100px"
+                                      data-font-size-1024="100px"
+                                      data-font-size-768="80px"
+                                      data-font-size-680="60px"
+                                      data-line-height-1600="100px"
+                                      data-line-height-1024="100px"
+                                      data-line-height-768="80px"
+                                      data-line-height-680="60px"
+                                      data-letter-spacing-1024="-5px"
+                                      data-letter-spacing-768="-4px"
+                                      data-letter-spacing-680="1px">
+                                      Blue<br>Wilderness
+                                    </h2>
+
+                                    <div
+                                      class="edgtf-elements-holder   edgtf-one-column  edgtf-responsive-mode-768 ">
+                                      <div class="edgtf-eh-item    "
+                                        data-item-class="edgtf-eh-custom-8199"
+                                        data-1400-1600="0 20% 60px">
+                                        <div class="edgtf-eh-item-inner">
+                                          <div class="edgtf-eh-item-content edgtf-eh-custom-8199"
+                                            style="padding: 0 10% 60px">
+                                            <div
+                                              class="wpb_text_column wpb_content_element ">
+                                              <div class="wpb_wrapper">
+                                                <p style="text-align: center; color:white;">
+                                                  Apparently we had reached a
+                                                  great height in the
+                                                  atmosphere, for the sky was
+                                                  a dead black, and the stars
+                                                  had ceased mas</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                      <div
+                                        class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                          <div class="wpb_wrapper">
+                                            <div
+                                              class="edgtf-elements-holder   edgtf-three-columns  edgtf-responsive-mode-680 ">
+                                              <div class="edgtf-eh-item   edgtf-horizontal-alignment-center "
+                                                data-item-class="edgtf-eh-custom-1615"
+                                                data-1025-1399="0 0 0 3%"
+                                                data-681-768="0 0 0 10%"
+                                                data-680="0 0 0 27.2%">
+                                                <div
+                                                  class="edgtf-eh-item-inner">
+                                                  <div class="edgtf-eh-item-content edgtf-eh-custom-1615"
+                                                    style="padding: 0 0 0 20%">
+                                                    <div
+                                                      class="edgtf-single-image-holder   ">
+                                                      <div
+                                                        class="edgtf-si-inner">
+                                                        <img width="141"
+                                                          height="61"
+                                                          src="wp-content/uploads/2019/08/h1-img-02.png"
+                                                          class="attachment-full size-full"
+                                                          alt="x"
+                                                          loading="lazy" />
+                                                      </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"
+                                                      style="height: 50px">
+                                                      <span
+                                                        class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="edgtf-eh-item   edgtf-horizontal-alignment-center "
+                                                data-item-class="edgtf-eh-custom-2500"
+                                                data-1025-1399="0 0 0 13%"
+                                                data-769-1024="0 0 0 24%"
+                                                data-681-768="0 0 0 18%"
+                                                data-680="0 0 0 29.4%">
+                                                <div
+                                                  class="edgtf-eh-item-inner">
+                                                  <div class="edgtf-eh-item-content edgtf-eh-custom-2500"
+                                                    style="padding: 0 0 0 20%">
+                                                    <div
+                                                      class="edgtf-single-image-holder   ">
+                                                      <div
+                                                        class="edgtf-si-inner">
+                                                        <img width="130"
+                                                          height="106"
+                                                          src="wp-content/uploads/2019/08/h1-img-03.png"
+                                                          class="attachment-full size-full"
+                                                          alt
+                                                          loading="lazy" />
+                                                      </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"
+                                                      style="height: 50px">
+                                                      <span
+                                                        class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="edgtf-eh-item   edgtf-horizontal-alignment-center "
+                                                data-item-class="edgtf-eh-custom-9261"
+                                                data-1025-1399="0px 0 0 17%"
+                                                data-681-768="0 0 0 19%"
+                                                data-680="0 0 0 27.2%">
+                                                <div
+                                                  class="edgtf-eh-item-inner">
+                                                  <div class="edgtf-eh-item-content edgtf-eh-custom-9261"
+                                                    style="padding: 0 0 0 20%">
+                                                    <div
+                                                      class="edgtf-single-image-holder   ">
+                                                      <div
+                                                        class="edgtf-si-inner">
+                                                        <img width="141"
+                                                          height="61"
+                                                          src="wp-content/uploads/2019/08/h1-img-04.png"
+                                                          class="attachment-full size-full"
+                                                          alt="s"
+                                                          loading="lazy" />
+                                                      </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"
+                                                      style="height: 50px">
+                                                      <span
+                                                        class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-content-middle vc_row-flex edgtf-content-aligment-center">
+                                      <div
+                                        class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12">
+                                        <div class="vc_column-inner">
+                                          <div class="wpb_wrapper">
+                                            <div
+                                              class="edgtf-elements-holder   edgtf-one-column  edgtf-responsive-mode-768 ">
+                                              <div class="edgtf-eh-item   edgtf-horizontal-alignment-center "
+                                                data-item-class="edgtf-eh-custom-4049"
+                                                data-1400-1600="0 21% 0 30%"
+                                                data-1025-1399="0 21% 0 27%"
+                                                data-769-1024="0 21% 80px 33%"
+                                                data-681-768="0 21% 80px 28%"
+                                                data-680="0 0 80px 7.2%">
+                                                <div
+                                                  class="edgtf-eh-item-inner">
+                                                  <div class="edgtf-eh-item-content edgtf-eh-custom-4049"
+                                                    style="padding: 0 21% 0 31%">
+                                                    <div
+                                                      class="edgtf-single-image-holder   ">
+                                                      <div
+                                                        class="edgtf-si-inner">
+                                                        <img width="265"
+                                                          height="39"
+                                                          src="wp-content/uploads/2019/08/h1-img-05.png"
+                                                          class="attachment-full size-full"
+                                                          alt="s"
+                                                          loading="lazy" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <br>
+                                                <br>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0">
+                                <div class="vc_column-inner">
+                                  <div class="wpb_wrapper">
+                                    <div class="edgtf-single-image-holder">
+                                      <div class="edgtf-si-inner">
+                                        <img width="400" height="720" src="./image/blue-wilderness-upcoming.jpeg" class="attachment-full size-full" alt="z" loading="lazy"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+
                 </section>
                
                   <br>
@@ -4946,6 +5401,9 @@
                 </section> -->
 
 
+                <br>
+                <br>
+
                 <section class="section position-relative">
                   <div class="edgtf-row-grid-section-wrapper ">
                     <div class="edgtf-row-grid-section">
@@ -6020,6 +6478,33 @@
 
 		if (window.RS_MODULES.checkMinimal !== undefined) { window.RS_MODULES.checkMinimal(); };
 	</script>
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5
+  };
+
+  const sections = document.querySelectorAll('.edgtf-custom-font-holder-main');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('edgtf-appear');
+      } else {
+        entry.target.classList.remove('edgtf-appear');
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+});
+
 
 </body>
 
