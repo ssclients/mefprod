@@ -1745,8 +1745,26 @@
     }
 
     .elementor-16 .elementor-element.elementor-element-b0cac2b {
+      position: relative;
       padding: 60px 0px 0px 0px;
+      overflow: hidden; /* Ensures the pseudo-element doesn't spill out of its container */
     }
+
+    .elementor-16 .elementor-element.elementor-element-b0cac2b::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("./image/testimonials-bg.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(90%) contrast(91%) saturate(40%) blur(2px) hue-rotate(0deg);
+      z-index: -1;
+    }
+
 
     .elementor-16 .elementor-element.elementor-element-255d4f8>.elementor-element-populated {
       margin: 0px 0px 0px 0px;
@@ -1760,6 +1778,7 @@
       max-width: 512px;
       --container-widget-width: 512px;
       --container-widget-flex-grow: 0;
+      
     }
 
     .elementor-bc-flex-widget .elementor-16 .elementor-element.elementor-element-1b9ca9e.elementor-column .elementor-widget-wrap {
@@ -1859,12 +1878,40 @@
     }
 
     .elementor-16 .elementor-element.elementor-element-702b794:not(.elementor-motion-effects-element-type-background),
-    .elementor-16 .elementor-element.elementor-element-702b794>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-      background-image: url("wp-content/uploads/2021/11/h1-bg-img1.jpg");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+.elementor-16 .elementor-element.elementor-element-702b794>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+  position: relative;
+  overflow: hidden;
+}
+
+.elementor-16 .elementor-element.elementor-element-702b794:not(.elementor-motion-effects-element-type-background)::before,
+.elementor-16 .elementor-element.elementor-element-702b794>.elementor-motion-effects-container>.elementor-motion-effects-layer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./image/testimonial-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: -2;
+}
+
+.elementor-16 .elementor-element.elementor-element-702b794:not(.elementor-motion-effects-element-type-background)::after,
+.elementor-16 .elementor-element.elementor-element-702b794>.elementor-motion-effects-container>.elementor-motion-effects-layer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(46, 49, 63, 0.28);
+  z-index: -1;
+}
+
+
 
     .elementor-16 .elementor-element.elementor-element-702b794 {
       transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -2808,6 +2855,7 @@
                                   </svg></span> </h5>
                             </div>
                           </div>
+                          <br>
                           </div>
                         </div>
                       </div>
@@ -3564,7 +3612,7 @@
                                                   </svg>
                                                 </a>
                                               </div>
-                                              <a itemprop="url" href="#"
+                                              <a itemprop="url" href="https://vimeo.com/380390757"
                                                 target="_self">
                                                 <img loading="lazy" decoding="async" width="1400" height="730"
                                                   src="./image/cobwebs-ndht.jpg"
@@ -3580,21 +3628,21 @@
                                               <div class="qodef-e-text">
                                                 <h4 itemprop="name" class="qodef-e-title">
                                                   <a itemprop="url" class="qodef-e-title-link"
-                                                    href="#" target="_self">
+                                                    href="https://vimeo.com/380390757" target="_self">
                                                     Cobwebs | Short Film</a>
                                                 </h4>
                                               </div>
                                               <div class="qodef-e-bottom-holder">
                                                 <div class="qodef-e-info">
-                                                  <a href="#" rel="tag">Madras Entertainment Factory</a>
+                                                  <a href="https://vimeo.com/380390757" rel="tag">Madras Entertainment Factory</a>
                                                   <div class="qodef-info-separator-end"></div>
-                                                  <a href="#" rel="tag">Narrative, Drama, Horror & Thriller</a>
+                                                  <a href="https://vimeo.com/380390757" rel="tag">Narrative, Drama, Horror & Thriller</a>
                                                   <div class="qodef-info-separator-end"></div>
                                                 </div>
                                               </div>
                                             </div>
                                             <a itemprop="url" class="qodef-e-post-link"
-                                              href="#" target="_self"></a>
+                                              href="https://vimeo.com/380390757" target="_self"></a>
                                           </div>
                                         </article>
                                         <article
@@ -3614,7 +3662,7 @@
                                                   </svg>
                                                 </a>
                                               </div>
-                                              <a itemprop="url" href="#"
+                                              <a itemprop="url" href="https://vimeo.com/386126171"
                                                 target="_self">
                                                 <img loading="lazy" decoding="async" width="1400" height="730"
                                                   src="./image/till-death-ndht.jpg"
@@ -3630,21 +3678,21 @@
                                               <div class="qodef-e-text">
                                                 <h4 itemprop="name" class="qodef-e-title">
                                                   <a itemprop="url" class="qodef-e-title-link"
-                                                    href="#" target="_self">
+                                                    href="https://vimeo.com/386126171" target="_self">
                                                     Till Death </a>
                                                 </h4>
                                               </div>
                                               <div class="qodef-e-bottom-holder">
                                                 <div class="qodef-e-info">
-                                                  <a href="#" rel="tag">Madras Entertainment Factory</a>
+                                                  <a href="https://vimeo.com/386126171" rel="tag">Madras Entertainment Factory</a>
                                                   <div class="qodef-info-separator-end"></div>
-                                                  <a href="#" rel="tag">Narrative, Drama, Horror & Thriller</a>
+                                                  <a href="https://vimeo.com/386126171" rel="tag">Narrative, Drama, Horror & Thriller</a>
                                                   <div class="qodef-info-separator-end"></div>
                                                 </div>
                                               </div>
                                             </div>
                                             <a itemprop="url" class="qodef-e-post-link"
-                                              href="#" target="_self"></a>
+                                              href="https://vimeo.com/386126171" target="_self"></a>
                                           </div>
                                         </article>
                                         <article
@@ -3664,7 +3712,7 @@
                                                   </svg>
                                                 </a>
                                               </div>
-                                              <a itemprop="url" href="#"
+                                              <a itemprop="url" href="https://vimeo.com/386125333"
                                                 target="_self">
                                                 <img loading="lazy" decoding="async" width="1400" height="730"
                                                   src="./image/wrong-house-nht.jpg"
@@ -3680,21 +3728,21 @@
                                               <div class="qodef-e-text">
                                                 <h4 itemprop="name" class="qodef-e-title">
                                                   <a itemprop="url" class="qodef-e-title-link"
-                                                    href="#" target="_self">
+                                                    href="https://vimeo.com/386125333" target="_self">
                                                     Wrong House </a>
                                                 </h4>
                                               </div>
                                               <div class="qodef-e-bottom-holder">
                                                 <div class="qodef-e-info">
-                                                  <a href="#" rel="tag">Madras Entertainment Factory</a>
+                                                  <a href="https://vimeo.com/386125333" rel="tag">Madras Entertainment Factory</a>
                                                   <div class="qodef-info-separator-end"></div>
-                                                  <a href="#" rel="tag">Narrative, Horror & Thriller</a>
+                                                  <a href="https://vimeo.com/386125333" rel="tag">Narrative, Horror & Thriller</a>
                                                   <div class="qodef-info-separator-end"></div>
                                                 </div>
                                               </div>
                                             </div>
                                             <a itemprop="url" class="qodef-e-post-link"
-                                              href="#" target="_self"></a>
+                                              href="https://vimeo.com/386125333" target="_self"></a>
                                           </div>
                                         </article>
                                         <article
@@ -3714,7 +3762,7 @@
                                                   </svg>
                                                 </a>
                                               </div>
-                                              <a itemprop="url" href="#"
+                                              <a itemprop="url" href="https://vimeo.com/484977414"
                                                 target="_self">
                                                 <img loading="lazy" decoding="async" width="1400" height="730"
                                                   src="./image/alma-lake-summer-m.jpg"
@@ -3730,21 +3778,21 @@
                                               <div class="qodef-e-text">
                                                 <h4 itemprop="name" class="qodef-e-title">
                                                   <a itemprop="url" class="qodef-e-title-link"
-                                                    href="#" target="_self">
+                                                    href="https://vimeo.com/484977414" target="_self">
                                                     Alma Lake - Summer </a>
                                                 </h4>
                                               </div>
                                               <div class="qodef-e-bottom-holder">
                                                 <div class="qodef-e-info">
-                                                  <a href="#" rel="tag">Madras Entertainment Factory</a>
+                                                  <a href="https://vimeo.com/484977414" rel="tag">Madras Entertainment Factory</a>
                                                   <div class="qodef-info-separator-end"></div>
-                                                  <a href="#" rel="tag">Music</a>
+                                                  <a href="https://vimeo.com/484977414" rel="tag">Music</a>
                                                   <div class="qodef-info-separator-end"></div>
                                                 </div>
                                               </div>
                                             </div>
                                             <a itemprop="url" class="qodef-e-post-link"
-                                              href="#" target="_self"></a>
+                                              href="https://vimeo.com/484977414" target="_self"></a>
                                           </div>
                                         </article>
                                         <article
@@ -3764,7 +3812,7 @@
                                                   </svg>
                                                 </a>
                                               </div>
-                                              <a itemprop="url" href="#"
+                                              <a itemprop="url" href="https://vimeo.com/399792445"
                                                 target="_self">
                                                 <img loading="lazy" decoding="async" width="1400" height="730"
                                                   src="./image/torn-plaid-ndht.jpg"
@@ -3780,21 +3828,21 @@
                                               <div class="qodef-e-text">
                                                 <h4 itemprop="name" class="qodef-e-title">
                                                   <a itemprop="url" class="qodef-e-title-link"
-                                                    href="#" target="_self">
+                                                    href="https://vimeo.com/399792445" target="_self">
                                                     Torn Plaid </a>
                                                 </h4>
                                               </div>
                                               <div class="qodef-e-bottom-holder">
                                                 <div class="qodef-e-info">
-                                                  <a href="#" rel="tag">Madras Entertainment Factory</a>
+                                                  <a href="https://vimeo.com/399792445" rel="tag">Madras Entertainment Factory</a>
                                                   <div class="qodef-info-separator-end"></div>
-                                                  <a href="#" rel="tag">Narrative, Drama, Horror & Thriller</a>
+                                                  <a href="https://vimeo.com/399792445" rel="tag">Narrative, Drama, Horror & Thriller</a>
                                                   <div class="qodef-info-separator-end"></div>
                                                 </div>
                                               </div>
                                             </div>
                                             <a itemprop="url" class="qodef-e-post-link"
-                                              href="#" target="_self"></a>
+                                              href="https://vimeo.com/399792445" target="_self"></a>
                                           </div>
                                         </article>
                                         <article
@@ -3814,7 +3862,7 @@
                                                   </svg>
                                                 </a>
                                               </div>
-                                              <a itemprop="url" href="#"
+                                              <a itemprop="url" href="https://vimeo.com/495065379"
                                                 target="_self">
                                                 <img loading="lazy" decoding="async" width="1400" height="730"
                                                   src="./image/growth-acss.jpg"
@@ -3830,21 +3878,21 @@
                                               <div class="qodef-e-text">
                                                 <h4 itemprop="name" class="qodef-e-title">
                                                   <a itemprop="url" class="qodef-e-title-link"
-                                                    href="#" target="_self">
+                                                    href="https://vimeo.com/495065379" target="_self">
                                                     Growth </a>
                                                 </h4>
                                               </div>
                                               <div class="qodef-e-bottom-holder">
                                                 <div class="qodef-e-info">
-                                                  <a href="#" rel="tag">Madras Entertainment Factory</a>
+                                                  <a href="https://vimeo.com/495065379" rel="tag">Madras Entertainment Factory</a>
                                                   <div class="qodef-info-separator-end"></div>
-                                                  <a href="#" rel="tag">Ads and Commercials, 45 Second Spot</a>
+                                                  <a href="https://vimeo.com/495065379" rel="tag">Ads and Commercials, 45 Second Spot</a>
                                                   <div class="qodef-info-separator-end"></div>
                                                 </div>
                                               </div>
                                             </div>
                                             <a itemprop="url" class="qodef-e-post-link"
-                                              href="#" target="_self"></a>
+                                              href="https://vimeo.com/495065379" target="_self"></a>
                                           </div>
                                         </article>
                                         <article
@@ -3864,7 +3912,7 @@
                                                   </svg>
                                                 </a>
                                               </div>
-                                              <a itemprop="url" href="#"
+                                              <a itemprop="url" href="https://vimeo.com/494734279"
                                                 target="_self">
                                                 <img loading="lazy" decoding="async" width="1400" height="730"
                                                   src="./image/celeste-end.jpg"
@@ -3880,21 +3928,21 @@
                                               <div class="qodef-e-text">
                                                 <h4 itemprop="name" class="qodef-e-title">
                                                   <a itemprop="url" class="qodef-e-title-link"
-                                                    href="#" target="_self">
+                                                    href="https://vimeo.com/494734279" target="_self">
                                                     Celeste </a>
                                                 </h4>
                                               </div>
                                               <div class="qodef-e-bottom-holder">
                                                 <div class="qodef-e-info">
-                                                  <a href="#" rel="tag">Madras Entertainment Factory</a>
+                                                  <a href="https://vimeo.com/494734279" rel="tag">Madras Entertainment Factory</a>
                                                   <div class="qodef-info-separator-end"></div>
-                                                  <a href="#" rel="tag">Educational, Narrative, Drama</a>
+                                                  <a href="https://vimeo.com/494734279" rel="tag">Educational, Narrative, Drama</a>
                                                   <div class="qodef-info-separator-end"></div>
                                                 </div>
                                               </div>
                                             </div>
                                             <a itemprop="url" class="qodef-e-post-link"
-                                              href="#" target="_self"></a>
+                                              href="https://vimeo.com/494734279" target="_self"></a>
                                           </div>
                                         </article>
                                         <article
@@ -3914,7 +3962,7 @@
                                                   </svg>
                                                 </a>
                                               </div>
-                                              <a itemprop="url" href="#"
+                                              <a itemprop="url" href="https://vimeo.com/693280383"
                                                 target="_self">
                                                 <img loading="lazy" decoding="async" width="1400" height="730"
                                                   src="./image/jesse-rey-down-to-earth-m.jpg"
@@ -3930,21 +3978,21 @@
                                               <div class="qodef-e-text">
                                                 <h4 itemprop="name" class="qodef-e-title">
                                                   <a itemprop="url" class="qodef-e-title-link"
-                                                    href="#" target="_self">
+                                                    href="https://vimeo.com/693280383" target="_self">
                                                     Jesse Rey | Down to Earth </a>
                                                 </h4>
                                               </div>
                                               <div class="qodef-e-bottom-holder">
                                                 <div class="qodef-e-info">
-                                                  <a href="#" rel="tag">Madras Entertainment Factory</a>
+                                                  <a href="https://vimeo.com/693280383" rel="tag">Madras Entertainment Factory</a>
                                                   <div class="qodef-info-separator-end"></div>
-                                                  <a href="#" rel="tag">Music</a>
+                                                  <a href="https://vimeo.com/693280383" rel="tag">Music</a>
                                                   <div class="qodef-info-separator-end"></div>
                                                 </div>
                                               </div>
                                             </div>
                                             <a itemprop="url" class="qodef-e-post-link"
-                                              href="#" target="_self"></a>
+                                              href="https://vimeo.com/693280383" target="_self"></a>
                                           </div>
                                         </article>
                                         <article
@@ -3964,7 +4012,7 @@
                                                   </svg>
                                                 </a>
                                               </div>
-                                              <a itemprop="url" href="#"
+                                              <a itemprop="url" href="https://vimeo.com/693266914"
                                                 target="_self">
                                                 <img loading="lazy" decoding="async" width="1400" height="730"
                                                   src="./image/gcc-az-international-students-feature-bcnde.jpg"
@@ -3980,21 +4028,71 @@
                                               <div class="qodef-e-text">
                                                 <h4 itemprop="name" class="qodef-e-title">
                                                   <a itemprop="url" class="qodef-e-title-link"
-                                                    href="#" target="_self">
+                                                    href="https://vimeo.com/693266914" target="_self">
                                                     GCC AZ - International Students Feature </a>
                                                 </h4>
                                               </div>
                                               <div class="qodef-e-bottom-holder">
                                                 <div class="qodef-e-info">
-                                                  <a href="#" rel="tag">Madras Entertainment Factory</a>
+                                                  <a href="https://vimeo.com/693266914" rel="tag">Madras Entertainment Factory</a>
                                                   <div class="qodef-info-separator-end"></div>
-                                                  <a href="#" rel="tag">Branded Content, Branded Content Narrative, Documentary, Educational</a>
+                                                  <a href="https://vimeo.com/693266914" rel="tag">Branded Content, Branded Content Narrative, Documentary, Educational</a>
                                                   <div class="qodef-info-separator-end"></div>
                                                 </div>
                                               </div>
                                             </div>
                                             <a itemprop="url" class="qodef-e-post-link"
-                                              href="#" target="_self"></a>
+                                              href="https://vimeo.com/693266914" target="_self"></a>
+                                          </div>
+                                        </article>
+                                        <article
+                                          class="qodef-e swiper-slide qodef-item--full post-1186 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-tag-fantasy portfolio-artist-naomi-takeda portfolio-country-japan">
+                                          <div class="qodef-e-inner">
+                                            <div class="qodef-e-media-image ">
+                                              <div class="qodef-video--on-click">
+                                                <a href="https://vimeo.com/693266914" itemprop="url"
+                                                  class="qodef-m-play qodef-magnific-popup qodef-popup-item"
+                                                  data-type="iframe">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62"
+                                                    viewBox="0 0 62 62">
+                                                    <polygon points="38.28 31 27.028 24.504 27.028 37.496 38.28 31" />
+                                                    <polygon class="qodef-fill"
+                                                      points="38.28 31 27.028 24.504 27.028 37.496 38.28 31" />
+                                                    <circle cx="31" cy="31" r="30" />
+                                                  </svg>
+                                                </a>
+                                              </div>
+                                              <a itemprop="url" href="https://vimeo.com/693266914"
+                                                target="_self">
+                                                <img loading="lazy" decoding="async" width="1400" height="730"
+                                                  src="./image/gcc-az-international-students-feature-bcnde.jpg"
+                                                  class="attachment-full size-full" alt="m"
+                                                  srcset="./image/gcc-az-international-students-feature-bcnde.jpg 1400w, ./image/gcc-az-international-students-feature-bcnde.jpg 300w, ./image/gcc-az-international-students-feature-bcnde.jpg 600w, ./image/gcc-az-international-students-feature-bcnde.jpg 1024w, ./image/gcc-az-international-students-feature-bcnde.jpg 768w"
+                                                  sizes="(max-width: 1400px) 100vw, 1400px" /> </a>
+                                            </div>
+                                            <div class="qodef-e-top-holder">
+                                              <div class="qodef-e-info">
+                                              </div>
+                                            </div>
+                                            <div class="qodef-e-content">
+                                              <div class="qodef-e-text">
+                                                <h4 itemprop="name" class="qodef-e-title">
+                                                  <a itemprop="url" class="qodef-e-title-link"
+                                                    href="https://vimeo.com/693266914" target="_self">
+                                                    GCC AZ - International Students Feature </a>
+                                                </h4>
+                                              </div>
+                                              <div class="qodef-e-bottom-holder">
+                                                <div class="qodef-e-info">
+                                                  <a href="https://vimeo.com/693266914" rel="tag">Madras Entertainment Factory</a>
+                                                  <div class="qodef-info-separator-end"></div>
+                                                  <a href="https://vimeo.com/693266914" rel="tag">Branded Content, Branded Content Narrative, Documentary, Educational</a>
+                                                  <div class="qodef-info-separator-end"></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <a itemprop="url" class="qodef-e-post-link"
+                                              href="https://vimeo.com/693266914" target="_self"></a>
                                           </div>
                                         </article>
                                       </div>
@@ -4188,14 +4286,25 @@
                                                       <div class="wpb_wrapper">
                                                           <div class="edgtf-iwt clearfix edgtf-iwt-icon-top edgtf-iwt-icon-medium">
                                                               <div class="edgtf-iwt-icon">
-                                                                  <img width="88" height="87" src="wp-content/uploads/2019/08/h1-img-06.png" alt="TV Shows" />
+                                                                  <img width="88" height="87" src="wp-content/uploads/2019/08/h1-img-06.png" alt="Production" />
                                                               </div>
                                                               <div class="edgtf-iwt-content">
-                                                                  <h4 class="edgtf-iwt-title">
-                                                                      <span class="edgtf-iwt-title-text" style="color:white">TV Shows</span>
-                                                                  </h4>
-                                                                  <p class="edgtf-iwt-text" style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                              </div>
+                                                                <h4 class="edgtf-iwt-title">
+                                                                    <span class="edgtf-iwt-title-text" style="color:white">Production</span>
+                                                                </h4>
+                                                                <p class="edgtf-iwt-text" style="color:white">Bring your vision to life with MEF's comprehensive video production services.</p>
+                                                                <strong>We Specialise in:</strong>
+                                                                <ul style="list-style-type: disc; color: white;">
+                                                                    <li>Scriptwriting</li>
+                                                                    <li>Storyboarding</li>
+                                                                    <li>Filming</li>
+                                                                    <li>Directing</li>
+                                                                    <li>Lighting</li>
+                                                                    <li>Sound Recording</li>
+                                                                </ul>
+                                                                <br>
+                                                                <p style="color: white;">From concept to creation, we deliver high-quality, captivating videos that resonate with global audiences.</p>
+                                                            </div>                                                            
                                                           </div>
                                                       </div>
                                                   </div>
@@ -4326,841 +4435,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="vc_row wpb_row vc_row-fluid">
-                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                      <div class="vc_column-inner">
-                        <div class="wpb_wrapper">
-                          <div class="edgtf-portfolio-list-holder edgtf-pl-interactive-scroll edgtf-three-columns edgtf-normal-space edgtf-disable-bottom-space edgtf-pl-standard   edgtf-pl-hover-none  edgtf-pl-pag-no-pagination        "
-                            data-type="interactive-scroll" data-number-of-rows="3"
-                            data-number-of-columns="three"
-                            data-space-between-items="normal" data-number-of-items="18"
-                            data-image-proportions="full"
-                            data-enable-fixed-proportions="no"
-                            data-enable-image-shadow="no" data-category="trailers"
-                            data-orderby="menu_order" data-order="ASC"
-                            data-item-style="standard" data-hover-style="none"
-                            data-enable-title="yes" data-title-tag="h5"
-                            data-enable-custom-text="yes" data-enable-author="yes"
-                            data-enable-category="yes" data-enable-count-images="yes"
-                            data-enable-excerpt="no" data-excerpt-length="20"
-                            data-pagination-type="no-pagination" data-filter="no"
-                            data-filter-order-by="name"
-                            data-enable-article-animation="no"
-                            data-enable-middle-column-offset="no"
-                            data-portfolio-slider-on="no" data-enable-loop="yes"
-                            data-enable-autoplay="yes" data-slider-speed="5000"
-                            data-slider-speed-animation="600" data-slider-padding="no"
-                            data-enable-navigation="yes" data-enable-pagination="yes"
-                            data-button-target="_self" data-enable-counter="yes"
-                            data-enable-button="yes" data-max-num-pages="1"
-                            data-next-page="2">
-                            <div
-                              class="edgtf-interactive-scroll-list-inner edgtf-pl-rows-3  ">
-                              <div class="edgtf-pl-interactive-scroll-content-holder">
-                                <div
-                                  class="edgtf-pl-interactive-scroll-content-line">
-                                  <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-142 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-drama portfolio-tag-tragedy">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div>
-                                              <div>
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    fallen
-                                                    angels.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="edgtf-pl-interactive-scroll-content-line">
-                                  <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                      <div
-                                        class="edgtf-pl-interactive-scroll-item swiper-slide">
-                                        <article
-                                          class="edgtf-pl-item edgtf-item-space  post-149 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-trailers portfolio-tag-experimental portfolio-tag-mystery">
-                                          <div
-                                            class="edgtf-pl-item-inner">
-                                            <a itemprop="url"
-                                              class="edgtf-pli-link edgtf-block-drag-link"
-                                              href="#"
-                                              target="_self"></a>
-                                            <div
-                                              class="edgtf-pli-video-holder">
-                                              <div
-                                                class="edgtf-pli-video-cover-image">
-                                                <img width="1100"
-                                                  height="585"
-                                                  src="awards/01.png"
-                                                  class="attachment-full size-full wp-post-image"
-                                                  alt="a"
-                                                  loading="lazy"
-                                                  srcset="awards/01.png 1100w, awards/01.png 300w, awards/01.png 768w, awards/01.png 1024w"
-                                                  sizes="(max-width: 1100px) 100vw, 1100px" />
-                                              </div>
-                                              <a class="edgtf-pli-video"
-                                                href="https://vimeo.com/320865282"
-                                                data-rel="prettyPhoto[portfolio_item_video_pretty_photo_561]">
-                                                <span
-                                                  class="edgtf-pli-video-inner">
-                                                  <svg xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                    x="0px"
-                                                    y="0px"
-                                                    width="76px"
-                                                    height="76px"
-                                                    viewBox="0 0 150 150"
-                                                    enable-background="new 0 0 150 150"
-                                                    xml:space="preserve">
-                                                    <polygon
-                                                      points="31.361,35.913 110.502,74.538 31.361,113.162 " />
-                                                    <path
-                                                      d="M15.002,138.184V11.817L144.463,75L15.002,138.184z M21.313,21.918V128.08L130.075,75L21.313,21.918z" />
-                                                  </svg> </span>
-                                              </a>
-                                            </div>
-                                            <div
-                                              class="edgtf-pli-text-holder">
-                                              <div
-                                                class="edgtf-pli-text-wrapper">
-                                                <div
-                                                  class="edgtf-pli-text">
-                                                  <h5 itemprop="name"
-                                                    class="edgtf-pli-title entry-title">
-                                                    human
-                                                    consciousness.
-                                                  </h5>
-                                                  <div
-                                                    class="edgtf-pli-category-holder">
-                                                    <a itemprop="url"
-                                                      class="edgtf-pli-category"
-                                                      href="#">trailers</a>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </article>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <br>
-                                <br>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </section>
                 <br>
                 <br>
@@ -5181,7 +4456,7 @@
                             <div class="wpb_wrapper">
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
-                                  <h2 style="text-align: center; color:white">our clients</h2>
+                                  <h2 style="text-align: center; color:white">our partners & clients</h2>
                                   <br>
                                 </div>
                               </div>
@@ -5280,7 +4555,7 @@
                       top: 0;
                       left: 0;
                       position: absolute;
-                      background-image: url("./image/wrong-house-nht.jpg");
+                      background-image: url("./image/our-clients-bg.png");
                       background-position: center center;
                       background-size: cover;
                       background-size: 120%;
@@ -5367,11 +4642,13 @@
                                           class="attachment-full size-full wp-post-image" alt="s" />
                                       </div>
                                       <div class="qodef-e-content">
-                                        <h4 itemprop="description" class="qodef-e-text" style="color: #dc9817">
-                                          “Lorem ipsum dolor sit amet, cum porro platon." </h4>
-                                        <h6 class="qodef-e-author">
-                                          <span class="qodef-e-author-job">Movie Director</span>
-                                        </h6>
+                                        <h4 itemprop="description" class="qodef-e-text" style="color: #ffffff">
+                                          “I had the privilege of designing the website for Madras Entertainment Factory, and it was a fantastic experience. Their commitment to storytelling and innovation inspired me to create a platform that reflects their unique vision. I'm proud to contribute to a company that is redefining cinema and connecting diverse cultures through film."</h4>
+                                        <h5 class="qodef-e-author">
+                                          <span class="qodef-e-author-job">Smit Shetye
+                                            <h5 class="qodef-e-author"> Founder - Hasya Katta Official</h5>
+                                          </span>
+                                        </h5>
                                       </div>
                                     </div>
                                   </div>
@@ -5383,11 +4660,11 @@
                                           class="attachment-full size-full wp-post-image" alt="s" />
                                       </div>
                                       <div class="qodef-e-content">
-                                        <h4 itemprop="description" class="qodef-e-text" style="color: #dc9817">
+                                        <h4 itemprop="description" class="qodef-e-text" style="color: #ffffff">
                                           “Lorem ipsum dolor sit amet, cum porro platon." </h4>
-                                        <h6 class="qodef-e-author">
+                                        <h5 class="qodef-e-author">
                                           <span class="qodef-e-author-job">Film Producer</span>
-                                        </h6>
+                                        </h5>
                                       </div>
                                     </div>
                                   </div>
@@ -5399,11 +4676,11 @@
                                           class="attachment-full size-full wp-post-image" alt="s" />
                                       </div>
                                       <div class="qodef-e-content">
-                                        <h4 itemprop="description" class="qodef-e-text" style="color: #dc9817">
+                                        <h4 itemprop="description" class="qodef-e-text" style="color: #ffffff">
                                           “Lorem ipsum dolor sit amet, cum porro platon." </h4>
-                                        <h6 class="qodef-e-author">
+                                        <h5 class="qodef-e-author">
                                           <span class="qodef-e-author-job">Casting Director</span>
-                                        </h6>
+                                        </h5>
                                       </div>
                                     </div>
                                   </div>
