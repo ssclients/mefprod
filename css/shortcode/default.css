@@ -458,8 +458,8 @@ textarea:focus {
  .gray-bg { background: #eceff7 }
  .gray-dark-bg { background: #f6f6f6 }
  .black-bg { background: #0b181f}
- .black-dark-bg { background: #151515 }
- .black-light-bg { background: #191919 }
+ .black-dark-bg { background: #000000 }
+ .black-light-bg { background: #000000 }
  .default-bg { background: #000 }
  .transparent-bg { background: transparent }
  
