@@ -1588,7 +1588,7 @@
 								<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('../image/mwfs.jpg'); background-size: cover; background-position: center; opacity: 0.5; z-index: 0;"></div>
 							</div>
 							<br>
-							<div style="max-width: 1000px; text-align: justify;">
+							<div class="mef-content" style="max-width: 1000px; text-align: justify;">
 								<p>As a trailblazing start-up production company, MEF stands at the forefront of a new era in global entertainment, fusing diverse cultural influences to redefine storytelling on an international scale.</p>
 								<br>
 								<p>Born from the vibrant cultural tapestry of Chennai, India, Madras Entertainment Factory draws inspiration from the rich history and dynamic energy of its birthplace. Established with a vision to bridge cultural divides and amplify voices from around the world, MEF is not just a production company; it's a movement dedicated to fostering unity through the universal language of storytelling.</p>
@@ -1600,7 +1600,37 @@
 								<p>Diversity is not just a part of MEF; it's our heartbeat. Rooted in the belief that every voice deserves to be heard, we actively seek out and celebrate diverse perspectives, weaving them into the fabric of our stories. MEF's commitment to diversity is not only reflected in our projects but also embedded in our organizational culture.</p>
 								<br>
 								<p>MEF thrives on collaboration. We unite creators from every corner of the globe, forming a creative ecosystem where ideas flourish and boundaries dissolve. Our collaborations extend beyond traditional partnerships, embracing a global network that contributes to the richness of our content. Madras Entertainment Factory is not just shaping the entertainment industry; we are shaping the future.</p>
-							</div>
+							  </div>
+							  
+							  <style>
+								.mef-content {
+								  margin: 0 auto;
+								  padding: 15px;
+								  line-height: 1.6;
+								}
+							  
+								/* Mobile responsive styling for the MEF section only */
+								@media (max-width: 768px) {
+								  .mef-content {
+									max-width: 90%;
+									padding: 10px;
+								  }
+								  .mef-content p {
+									font-size: 16px;
+								  }
+								}
+							  
+								@media (max-width: 480px) {
+								  .mef-content {
+									max-width: 100%;
+									padding: 30px 30px; /* Add padding on the left and right */
+								  }
+								  .mef-content p {
+									font-size: 14px;
+								  }
+								}
+							  </style>						  
+							  
 						</div>
 					</div>
 				</section>
@@ -1642,6 +1672,8 @@
 					}
 				</style>			
 
+				<br>
+				<br>
 				<br>
                 <br>
 				<section>

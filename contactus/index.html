@@ -10,6 +10,8 @@
     <link href="../assets/img/favicon.png" rel="icon">
     <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -27,12 +29,6 @@
     <!-- Template Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet">
 
-    <!-- =======================================================
-        * Template Name: Bootslander - v2.2.0
-        * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-        * Author: BootstrapMade.com
-        * License: https://bootstrapmade.com/license/
-        ======================================================== -->
     <link rel="stylesheet" href="../css/style.css">
 
     <link rel="stylesheet" href="../css/custom_elements.css?mcOCJISz" id="custom-elements-css" data-ar-id="HqgCBdB2Hb">
@@ -1528,32 +1524,32 @@ margin: 0px 20px 40px 20px;
 
     
     
-    <section class="section">
+    <section class="contact-section">
         <div class="r-container">
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col">
                     <div class="d-flex flex-column gap-3 pe-lg-5">
                         <h5 class="accent-color lh-1 ls-2 fw-bold font-1">CONTACT</h5>
-                        <h4 class="font-2 lh-1 fw-bold" style="color: #ffffff">DONT <span style="color: var(--accent-color);">HESITATE</span> TO ASK US A <span style="color: var(--accent-color);">QUESTION</span></h4>
-                            <h5 style="color: #ffffff">Have an <span style="color: var(--accent-color);">idea</span> in your <span style="color: var(--accent-color);">mind</span>?</h5>                    
-                            <p style="color: #ffffff">Let's start your project with us</p>
-                        <div class="row row-cols-1 row-cols-lg-2" style="color: #ffffff">
+                        <h4 class="font-2 lh-1 fw-bold contact-heading text-white">DON'T <span class="accent-color">HESITATE</span> TO ASK US A <span class="accent-color">QUESTION</span></h4>
+                        <h5 class="text-white">Have an <span class="accent-color">idea</span> in your <span class="accent-color">mind</span>?</h5>
+                        <p class="text-white">Let's start your project with us</p>
+                        <div class="row row-cols-1 row-cols-lg-2 contact-details text-start">
                             <div class="col mb-3">
-                                <div class="d-flex align-items-center gap-3" >
+                                <div class="d-flex align-items-center gap-3">
                                     <i class="fa-solid fa-phone accent-color"></i>
-                                    <a href="tel:+919043222465" style="color:#ffffff">+91 9043222465</a>
+                                    <a href="tel:+919043222465" class="text-white">+91 9043222465</a>
                                 </div>
                             </div>
                             <div class="col mb-3">
                                 <div class="d-flex align-items-center gap-3">
                                     <i class="fa-solid fa-location-dot accent-color"></i>
-                                    India & USA
+                                    <span class="text-white">India & USA</span>
                                 </div>
                             </div>
                             <div class="col mb-3">
                                 <div class="d-flex align-items-center gap-3">
                                     <i class="fa-solid fa-envelope accent-color"></i>
-                                    <a href="mailto:operations@madrasentertainmentfactory.com" style="color:#ffffff">operations@madrasentertainmentfactory.com</a>
+                                    <a href="mailto:operations@madrasentertainmentfactory.com" class="text-white">operations@madrasentertainmentfactory.com</a>
                                 </div>
                             </div>
                         </div>
@@ -1561,88 +1557,154 @@ margin: 0px 20px 40px 20px;
                 </div>
                 <div class="col">
                     <div class="h-100 d-flex flex-column">
-                        <div class="success_msg toast align-items-center w-100 shadow-none mb-3 bg-transparent border border-danger rounded-0 my-4"
-                            role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="success_msg toast align-items-center w-100 shadow-none mb-3 bg-transparent border border-danger rounded-0 my-4" role="alert" aria-live="assertive" aria-atomic="true">
                             <div class="d-flex p-2">
                                 <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-danger">
                                     <i class="fa-solid fa-check f-36 text-danger"></i>
-                                    Something Wrong ! Send Form Failed.
+                                    Something Wrong! Send Form Failed.
                                 </div>
-                                <button type="button"
-                                    class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
-                                    data-bs-dismiss="toast" aria-label="Close"><i
-                                        class="fa-solid fa-xmark"></i></button>
+                                <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger" data-bs-dismiss="toast" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="error_msg toast align-items-center w-100 shadow-none border-successr mb-3 bg-transparent my-4 border rounded-0"
-                            role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="error_msg toast align-items-center w-100 shadow-none border-success mb-3 bg-transparent my-4 border rounded-0" role="alert" aria-live="assertive" aria-atomic="true">
                             <div class="d-flex p-2">
                                 <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-success">
                                     <i class="fa-solid fa-triangle-exclamation f-36 text-success"></i>
                                     Your Message Was Successfully Sent.
                                 </div>
-                                <button type="button"
-                                    class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
-                                    data-bs-dismiss="toast" aria-label="Close"><i
-                                        class="fa-solid fa-xmark"></i></button>
+                                <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success" data-bs-dismiss="toast" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
                             </div>
                         </div>
-                        <form class="d-flex flex-column w-100 needs-validation mb-3 form" 
-      action="https://hooks.airtable.com/workflows/v1/genericWebhook/appiMmcfX2VmFQ1OW/wflX9sFiAoWUvVXMK/wtrCTE4rfBeOaud9m" 
-      method="POST" novalidate>
-
+                        <form class="d-flex flex-column w-100 needs-validation mb-3 form" action="https://hooks.airtable.com/workflows/v1/genericWebhook/appiMmcfX2VmFQ1OW/wflX9sFiAoWUvVXMK/wtrCTE4rfBeOaud9m" method="POST" novalidate>
                             <div class="row row-cols-1 row-cols-lg-2 mb-3">
                                 <div class="col mb-3">
-                                    <input type="text" class="form-control p-3" name="first_name" id="first_name"
-                                        placeholder="First Name" required>
-                                    <div class="invalid-feedback">
-                                        The field is required.
-                                    </div>
+                                    <input type="text" class="form-control p-3" name="first_name" id="first_name" placeholder="First Name" required>
+                                    <div class="invalid-feedback">The field is required.</div>
                                 </div>
                                 <div class="col mb-3">
-                                    <input type="text" class="form-control p-3" name="last_name" id="last_name"
-                                        placeholder="Last Name" required>
-                                    <div class="invalid-feedback">
-                                        The field is required.
-                                    </div>
+                                    <input type="text" class="form-control p-3" name="last_name" id="last_name" placeholder="Last Name" required>
+                                    <div class="invalid-feedback">The field is required.</div>
                                 </div>
                             </div>
                             <div class="row row-cols-1 row-cols-lg-2 mb-3">
                                 <div class="col mb-3">
-                                    <input type="email" class="form-control p-3" name="email" id="email"
-                                        placeholder="Email" required>
-                                    <div class="invalid-feedback">
-                                        The field is required.
-                                    </div>
+                                    <input type="email" class="form-control p-3" name="email" id="email" placeholder="Email" required>
+                                    <div class="invalid-feedback">The field is required.</div>
                                 </div>
                                 <div class="col mb-3">
-                                    <input type="text" class="form-control p-3" name="subject" id="subject"
-                                        placeholder="Subject" required>
-                                    <div class="invalid-feedback">
-                                        The field is required.
-                                    </div>
+                                    <input type="text" class="form-control p-3" name="subject" id="subject" placeholder="Subject" required>
+                                    <div class="invalid-feedback">The field is required.</div>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" id="message" name="message" rows="5"
-                                    placeholder="Message"></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"></textarea>
                             </div>
                             <div class="mb-3">
-                                <button type="submit"
-                                    class="btn button rounded-0 button-outline accent-color fw-bold submit_form font-1 py-3">
+                                <button type="submit" class="btn button rounded-0 button-outline accent-color fw-bold submit_form font-1 py-3">
                                     Send Message
                                 </button>
                             </div>
                         </form>
-                        <p class="font-1 fw-bold" style="color: #ffffff;">
-                            We will contact you back within 24 hours via email.
-                        </p>
+                        <p class="font-1 fw-bold text-white">We will contact you back within 24 hours via email.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
+    <style>
+        .contact-section {
+            padding: 40px 20px;
+            background-color: #000000; /* Background for the section */
+            text-align: left; /* Left align text */
+        }
+    
+        .contact-section .accent-color {
+            color: var(--accent-color);
+        }
+    
+        .contact-section .text-white {
+            color: #ffffff !important;
+        }
+    
+        .contact-section .form-control {
+            background-color: transparent;
+            color: #ffffff; /* Make form field text white */
+            border: none; /* Remove all borders */
+            border-left: 2px solid #ccc; /* Left border */
+            border-bottom: 2px solid #ccc; /* Bottom border */
+            border-radius: 0; /* Remove border-radius for cleaner lines */
+        }
+    
+        .contact-section .form-control::placeholder {
+            color: #ffffff; /* Make placeholder text white */
+        }
+    
+        .contact-section .form-control:focus {
+            border-left-color: var(--accent-color); /* Change left border color on focus */
+            border-bottom-color: var(--accent-color); /* Change bottom border color on focus */
+            box-shadow: none;
+        }
+    
+        .contact-section .submit_form {
+            background-color: var(--accent-color);
+            border: none;
+            color: #fff;
+            transition: background-color 0.3s; /* Smooth transition for hover effects */
+        }
+    
+        .contact-section .submit_form:hover {
+            background-color: darken(var(--accent-color), 10%); /* Darken on hover */
+        }
+    
+        /* Icon alignment and styling */
+        .contact-section .contact-details i {
+            font-size: 1.5rem; /* Adjust the icon size */
+            color: var(--accent-color); /* Set icon color */
+        }
+    
+        .contact-section .contact-details a {
+            color: #ffffff; /* Make contact links white */
+        }
+    
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .contact-section {
+                text-align: left; /* Keep text left-aligned on smaller devices */
+            }
+    
+            .contact-section h5,
+            .contact-section h4,
+            .contact-section h5 {
+                text-align: left; /* Left align the headers for all screen sizes */
+            }
+    
+            .contact-section .form-control {
+                font-size: 14px; /* Adjust font size for smaller screens */
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .contact-section .contact-heading {
+                font-size: 20px;
+            }
+    
+            .contact-section .form-control {
+                padding: 8px;
+                font-size: 16px; /* Increase font size for better readability */
+            }
+    
+            .contact-section .submit_form {
+                padding: 10px 20px; /* Adjust button size for mobile */
+            }
+        }
+    </style>
+    
+
     <div>
         <iframe loading="lazy" class="maps"
                     src="https://maps.google.com/maps?q=Chennai%2C%20Tamil%20Nadu%2C%20India&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
