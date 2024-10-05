@@ -2510,7 +2510,7 @@
 </head>
 
 <body
-  class="home page-template page-template-page-full-width page-template-page-full-width-php page page-id-16 theme-coppola qode-framework-1.2.1 woocommerce-no-js qodef-qi--no-touch qi-addons-for-elementor-1.6.6 qodef-back-to-top--enabled  qodef-content-behind-header qodef-header--standard qodef-header-appearance--sticky qodef-header--transparent qodef-content--behind-header qodef-mobile-header--standard qodef-drop-down-second--full-width qodef-drop-down-second--animate-height qodef-yith-wccl--predefined qodef-yith-wcqv--predefined qodef-yith-wcwl--predefined coppola-core-1.0.1 coppola-1.1 qodef-content-grid-1400 qodef-header-standard--center qodef-search--fullscreen elementor-default elementor-kit-8 elementor-page elementor-page-16"
+  class="home page-template page-template-page-full-width page-template-page-full-width-php page page-id-16 theme-coppola qode-framework-1.2.1 woocommerce-no-js qodef-qi--no-touch qi-addons-for-elementor-1.6.6   qodef-content-behind-header qodef-header--standard qodef-header-appearance--sticky qodef-header--transparent qodef-content--behind-header qodef-mobile-header--standard qodef-drop-down-second--full-width qodef-drop-down-second--animate-height qodef-yith-wccl--predefined qodef-yith-wcqv--predefined qodef-yith-wcwl--predefined coppola-core-1.0.1 coppola-1.1 qodef-content-grid-1400 qodef-header-standard--center qodef-search--fullscreen elementor-default elementor-kit-8 elementor-page elementor-page-16"
   itemscope itemtype="https://schema.org/WebPage">
   <!-- <a class="skip-link screen-reader-text" href="#qodef-page-content">Skip to the content</a> -->
 
@@ -4822,7 +4822,6 @@
 
                 <br>
                 <br>
-
                 <section class="section position-relative">
                   <div class="edgtf-row-grid-section-wrapper ">
                     <div class="edgtf-row-grid-section">
@@ -4837,7 +4836,7 @@
                                 </div>
                               </div>
                               <br>
-                              
+                
                               <!-- Add Clients logo carousel here -->
                               <div class="client-logo-carousel">
                                 <div><img src="./image/merit-logo-w.png" alt="Merit"></div>
@@ -4859,7 +4858,7 @@
                 
                   <style>
                     .section {
-                      padding: 6em 2em 6em 2em;
+                      padding: 6em 2em;
                       overflow: hidden;
                       position: relative;
                     }
@@ -4873,7 +4872,6 @@
                       background-image: url("./image/our-clients-bg.png");
                       background-position: center center;
                       background-size: cover;
-                      background-size: 120%;
                       filter: brightness(80%) contrast(90%) saturate(70%) blur(0px) hue-rotate(10deg);
                     }
                 
@@ -4886,12 +4884,12 @@
                     }
                 
                     .client-logo-carousel img {
-                      height: 150px; /* Increased height for logos */
+                      height: 120px; /* Increased height for logos */
                       width: auto;   /* Maintain the aspect ratio */
                       max-width: 100%;
                       display: block;
                       margin: 0 auto;
-                      padding: 0 20px; /* Adds padding between logos */
+                      padding: 0 15px; /* Adds padding between logos */
                       object-fit: contain; /* Ensure logos fit within the container */
                     }
                 
@@ -4903,25 +4901,44 @@
                     .slick-list {
                       padding: 0 20px; /* Optional: Add padding to the sides of the slider */
                     }
+                
+                    /* Responsive styles */
+                    @media (max-width: 1024px) {
+                      .client-logo-carousel img {
+                        height: 100px; /* Height for tablets */
+                      }
+                    }
+                
+                    @media (max-width: 768px) {
+                      .client-logo-carousel img {
+                        height: 80px; /* Height for small tablets */
+                      }
+                    }
+                
+                    @media (max-width: 480px) {
+                      .client-logo-carousel img {
+                        height: 60px; /* Height for mobile devices */
+                      }
+                    }
                   </style>
                 
                   <!-- Slick Carousel JS -->
                   <script type="text/javascript">
                     $(document).ready(function(){
                       var $carousel = $('.client-logo-carousel');
-                  
+                
                       // Clone the images to create the illusion of looping
-                      for (var i = 0; i < 2; i++) { // Change the number for how many times to repeat
+                      for (var i = 0; i < 2; i++) {
                         $carousel.children().clone().appendTo($carousel);
                       }
-                  
+                
                       // Initialize the Slick carousel
                       $carousel.slick({
                         slidesToShow: 5,
                         slidesToScroll: 1,
                         autoplay: true,
                         autoplaySpeed: 2000,
-                        infinite: true, // Enables infinite looping
+                        infinite: true,
                         arrows: true,
                         dots: false,
                         responsive: [
@@ -4929,30 +4946,30 @@
                             breakpoint: 1024,
                             settings: {
                               slidesToShow: 4,
+                              slidesToScroll: 1,
                             }
                           },
                           {
                             breakpoint: 768,
                             settings: {
                               slidesToShow: 3,
+                              slidesToScroll: 1,
                             }
                           },
                           {
                             breakpoint: 480,
                             settings: {
                               slidesToShow: 2,
+                              slidesToScroll: 1,
                             }
                           }
                         ]
                       });
                     });
                   </script>
-                  
-                </section>
+                </section>     
                 
                 
-                
-             
 
                 <hr>
                 <br>
@@ -4965,109 +4982,118 @@
   style="background-image: url('./img/home-one/slider/1.PNG');
          background-size: cover; 
          background-position: center; 
-         filter: brightness(90%) contrast(91%) saturate(100%) blur(0px) hue-rotate(0deg);">
+         filter: brightness(90%) contrast(91%) saturate(100%) blur(0px) hue-rotate(0deg);
+         padding: 40px 0;">
 
   <div class="elementor-container elementor-column-gap-default">
-    <div
-      class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c78f8e2"
-      data-id="c78f8e2" data-element_type="column">
+    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c78f8e2" data-id="c78f8e2" data-element_type="column">
       <div class="elementor-widget-wrap elementor-element-populated">
-        <div
-          class="elementor-element elementor-element-05e8ad6 elementor-widget elementor-widget-coppola_core_testimonials_list"
-          data-id="05e8ad6" data-element_type="widget"
-          data-widget_type="coppola_core_testimonials_list.default">
+        <div class="elementor-element elementor-element-05e8ad6 elementor-widget elementor-widget-coppola_core_testimonials_list" data-id="05e8ad6" data-element_type="widget" data-widget_type="coppola_core_testimonials_list.default">
           <section class="elementor-section elementor-inner-section elementor-element elementor-element-ad7d5d6 elementor-section-full_width elementor-section-height-default elementor-section-height-default qodef-elementor-content-no" data-id="ad7d5d6" data-element_type="section">
             <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-040a046" data-id="040a046" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-6e084d4 elementor-widget elementor-widget-coppola_core_text_marquee" data-id="6e084d4" data-element_type="widget" data-widget_type="coppola_core_text_marquee.default">
-                            <div class="elementor-widget-container">
-                                <div class="custom-marquee" style="position: relative; overflow: hidden; height: 340px;">
-                                    <div class="qodef-m-image" style="background-image: url('wp-content/uploads/2021/12/effect-main.png'); opacity: 0.5;"></div>
-                                    <div class="qodef-m-content">
-                                        <!-- Duplicated content for continuous scrolling -->
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-        
-                                        <!-- Duplicate block to ensure smooth scrolling -->
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                        <span class="qodef-m-text">Testimonials</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <style>
-            @keyframes custom-marquee {
-                0% {
-                    transform: translateX(0);
-                }
-                100% {
-                    transform: translateX(-100%);
-                }
-            }
-        
-            .custom-marquee {
-                position: relative;
-                height: 340px;
-                overflow: hidden;
-            }
-        
-            .qodef-m-content {
-                display: flex;
-                white-space: nowrap;
-                animation: custom-marquee 7s linear infinite; /* Adjust speed here */
-                font-size: 340px;
-                font-family: 'Anton', sans-serif;
-                line-height: 1em;
-                font-weight: 100;
-                text-transform: uppercase;
-            }
-        
-            .qodef-m-text {
-                color: #D3A329;
-                margin-right: 100px;
-            }
-        
-            .qodef-m-image {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                background-repeat: no-repeat;
-                z-index: 3;
-            }
-            
-        </style>
-        
-        
-              
+              <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-040a046" data-id="040a046" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div class="elementor-element elementor-element-6e084d4 elementor-widget elementor-widget-coppola_core_text_marquee" data-id="6e084d4" data-element_type="widget" data-widget_type="coppola_core_text_marquee.default">
+                    <div class="elementor-widget-container">
+                      <div class="custom-marquee" style="position: relative; overflow: hidden; height: 340px;">
+                        <div class="qodef-m-image" style="background-image: url('wp-content/uploads/2021/12/effect-main.png'); opacity: 0.5;"></div>
+                        <div class="qodef-m-content">
+                          <!-- Duplicated content for continuous scrolling -->
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
 
+                          <!-- Duplicate block to ensure smooth scrolling -->
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                          <span class="qodef-m-text">Testimonials</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <style>
+            @keyframes custom-marquee {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-100%);
+              }
+            }
+
+            .custom-marquee {
+              position: relative;
+              height: 340px;
+              overflow: hidden;
+            }
+
+            .qodef-m-content {
+              display: flex;
+              white-space: nowrap;
+              animation: custom-marquee 7s linear infinite; /* Adjust speed here */
+              font-size: 340px;
+              font-family: 'Anton', sans-serif;
+              line-height: 1em;
+              font-weight: 100;
+              text-transform: uppercase;
+            }
+
+            .qodef-m-text {
+              color: #D3A329;
+              margin-right: 100px;
+            }
+
+            .qodef-m-image {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              z-index: 3;
+            }
+
+            /* Responsive Styles */
+            @media (max-width: 768px) {
+              .qodef-m-content {
+                font-size: 150px; /* Smaller font size for mobile */
+              }
+            }
+
+            @media (max-width: 480px) {
+              .qodef-m-content {
+                font-size: 100px; /* Even smaller font size for smaller devices */
+              }
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+              color: #ffffff; /* Make the pagination arrows visible */
+              z-index: 4; /* Ensure arrows are above other elements */
+            }
+          </style>
 
           <br>
 
           <div class="elementor-widget-container">
             <div class="qodef-testimonials-list-wrapper qodef-skin--light">
-              <div
-                class="qodef-shortcode qodef-m qodef-testimonials-list qodef-skin--light qodef-grid qodef-swiper-container qodef-gutter--normal qodef-col-num--1 qodef-item-layout--info-below qodef-responsive--predefined qodef-swiper-pagination--on"
+              <div class="qodef-shortcode qodef-m qodef-testimonials-list qodef-skin--light qodef-grid qodef-swiper-container qodef-gutter--normal qodef-col-num--1 qodef-item-layout--info-below qodef-responsive--predefined qodef-swiper-pagination--on"
                 data-options="{&quot;slidesPerView&quot;:&quot;1&quot;,&quot;spaceBetween&quot;:30,&quot;centeredSlides&quot;:true,&quot;loop&quot;:true,&quot;autoplay&quot;:true,&quot;speed&quot;:&quot;&quot;,&quot;speedAnimation&quot;:&quot;&quot;,&quot;slideAnimation&quot;:&quot;fade&quot;,&quot;outsideNavigation&quot;:&quot;yes&quot;,&quot;unique&quot;:108}">
                 <div class="swiper-wrapper">
                   <div class="qodef-e swiper-slide ">
@@ -5118,16 +5144,17 @@
                       </div>
                       <div class="qodef-e-content">
                         <h4 itemprop="description" class="qodef-e-text" style="color: #ffffff">
-                          “The creative vision at Madras Entertainment Factory is truly inspiring. The team is passionate and dedicated, which reflects in the film's narrative and execution. It was a pleasure working with such talented individuals!" </h4>
-                          <h5 class="qodef-e-author">
-                            <span class="qodef-e-author-job">Rajesh Nair
-                              <h5 class="qodef-e-author"> Director </h5>
-                            </span>
-                          </h5>
+                          “Working with Madras Entertainment Factory was a dream come true. Their vision for innovative storytelling has truly transformed the film industry. I'm grateful to have been a part of this project!"</h4>
+                        <h5 class="qodef-e-author">
+                          <span class="qodef-e-author-job">Anand Chandrasekaran
+                            <h5 class="qodef-e-author"> Director </h5>
+                          </span>
+                        </h5>
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <div class="swiper-pagination"></div>
               </div>
               <div class="swiper-button-prev swiper-button-outside swiper-button-prev-108">
