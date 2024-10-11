@@ -189,57 +189,7 @@
 <script src="wp-content/plugins/wp-user-avatar/assets/select2/select2.minb2f9.js?ver=4.3.0"
   id="ppress-select2-js"></script>
 
-  <script>
-		(function (url) {
-			if (/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)) { return; }
-			var addEvent = function (evt, handler) {
-				if (window.addEventListener) {
-					document.addEventListener(evt, handler, false);
-				} else if (window.attachEvent) {
-					document.attachEvent('on' + evt, handler);
-				}
-			};
-			var removeEvent = function (evt, handler) {
-				if (window.removeEventListener) {
-					document.removeEventListener(evt, handler, false);
-				} else if (window.detachEvent) {
-					document.detachEvent('on' + evt, handler);
-				}
-			};
-			var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
-			var logHuman = function () {
-				if (window.wfLogHumanRan) { return; }
-				window.wfLogHumanRan = true;
-				var wfscr = document.createElement('script');
-				wfscr.type = 'text/javascript';
-				wfscr.async = true;
-				wfscr.src = url + '&r=' + Math.random();
-				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(wfscr);
-				for (var i = 0; i < evts.length; i++) {
-					removeEvent(evts[i], logHuman);
-				}
-			};
-			for (var i = 0; i < evts.length; i++) {
-				addEvent(evts[i], logHuman);
-			}
-		})('indexe4c9.html?wordfence_lh=1&amp;hid=A9E83BFFBBBC2AA15A2AAAC58B02A0ED');
-	</script>
-
-
-	<script data-cfasync="false" data-pagespeed-no-defer>
-		var dataLayer_content = { "pagePostType": "frontpage", "pagePostType2": "single-page", "pagePostAuthor": "admin" };
-		dataLayer.push(dataLayer_content);
-	</script>
-	<script data-cfasync="false">
-		(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'//www.googletagmanager.com/gtm.' + 'js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-5T772QJ');
-	</script>
+  
 
 <script>function setREVStartSize(e) {
   //window.requestAnimationFrame(function() {
@@ -2524,7 +2474,7 @@
                               <section id="hero-video-section">
                                 <div class="video-container">
                                     <video autoplay muted playsinline loop id="hero-video">
-                                        <source src="https://46926049.fs1.hubspotusercontent-na1.net/hubfs/46926049/MEF%20Showreel%20Ad%20.mp4" type="video/mp4">
+                                        <source src="./video/mef-showreel-ad.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
@@ -2946,7 +2896,7 @@
                                                     <br>
                                                     <br>
                                                     <div style="display: flex; justify-content: center;">
-                                                      <img src="./image/pg-rating-w.png" width="300" height="40">
+                                                      <img src="./image/pg-rating-w.png" alt="" width="300" height="40">
                                                     </div>                                                                                                                                              
                                                     <br>
                                                     <div class="edgtf-elements-holder edgtf-three-columns edgtf-responsive-mode-680">
@@ -3024,7 +2974,7 @@
                                                         <br>
                                                         <br>
                                                         <div style="display: flex; justify-content: center;">
-                                                          <img src="./image/pg-13-rating-w.png" width="300" height="40">
+                                                          <img src="./image/pg-13-rating-w.png" alt="" width="300" height="40">
                                                         </div>
                                                         <br>
                                                     <div class="edgtf-elements-holder edgtf-three-columns edgtf-responsive-mode-680">
@@ -3081,7 +3031,7 @@
                                                         <br>
                                                         <br>
                                                         <div style="display: flex; justify-content: center;">
-                                                          <img src="./image/pg-13-rating-w.png" width="300" height="40">
+                                                          <img src="./image/pg-13-rating-w.png" alt="" width="300" height="40">
                                                         </div>
                                                         <br>
                                                     <div class="edgtf-elements-holder edgtf-three-columns edgtf-responsive-mode-680">
@@ -5204,10 +5154,6 @@
   <div class="rbt-toolbar" data-theme="Coppola" data-featured data-button-position="78%" data-button-horizontal="right"
     data-button-alt="no"></div>
 
-
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4XZBMN" height="0" width="0"
-      style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
-
   <script>
     var sbiajaxurl = "wp-admin/admin-ajax.html";
   </script>
@@ -5268,43 +5214,6 @@
     async id="tp-tools-js"></script>
   <script src="wp-content/plugins/revslider/public/assets/js/rs6.minf266.js?ver=6.6.18" defer
     async id="revmin-js"></script>
-  <script
-    src="wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min6e65.js?ver=2.7.0-wc.7.4.0"
-    id="jquery-blockui-js"></script>
-  <script id="wc-add-to-cart-js-extra">
-    /* <![CDATA[ */
-    var wc_add_to_cart_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/coppola.qodeinteractive.com\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
-    /* ]]> */
-  </script>
-  <script
-    src="wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.minfbed.js?ver=7.4.0"
-    id="wc-add-to-cart-js"></script>
-  <script
-    src="wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min4d7b.js?ver=2.1.4-wc.7.4.0"
-    id="js-cookie-js"></script>
-  <script id="woocommerce-js-extra">
-    /* <![CDATA[ */
-    var woocommerce_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%" };
-    /* ]]> */
-  </script>
-  <script
-    src="wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.minfbed.js?ver=7.4.0"
-    id="woocommerce-js"></script>
-  <script id="wc-cart-fragments-js-extra">
-    /* <![CDATA[ */
-    var wc_cart_fragments_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_ac2c3a35adf701dfadf945b5c384d112", "fragment_name": "wc_fragments_ac2c3a35adf701dfadf945b5c384d112", "request_timeout": "5000" };
-    /* ]]> */
-  </script>
-  <script
-    src="wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.minfbed.js?ver=7.4.0"
-    id="wc-cart-fragments-js"></script>
-  <script src="wp-includes/js/jquery/ui/core.minb37e.js?ver=1.13.3"
-    id="jquery-ui-core-js"></script>
-  <script id="qi-addons-for-elementor-script-js-extra">
-    /* <![CDATA[ */
-    var qodefQiAddonsGlobal = { "vars": { "adminBarHeight": 0, "iconArrowLeft": "<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0.5\" y1=\"16\" x2=\"33.5\" y2=\"16\"\/><line x1=\"0.3\" y1=\"16.5\" x2=\"16.2\" y2=\"0.7\"\/><line x1=\"0\" y1=\"15.4\" x2=\"16.2\" y2=\"31.6\"\/><\/svg>", "iconArrowRight": "<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0\" y1=\"16\" x2=\"33\" y2=\"16\"\/><line x1=\"17.3\" y1=\"0.7\" x2=\"33.2\" y2=\"16.5\"\/><line x1=\"17.3\" y1=\"31.6\" x2=\"33.5\" y2=\"15.4\"\/><\/svg>", "iconClose": "<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 9.1 9.1\" xml:space=\"preserve\"><g><path d=\"M8.5,0L9,0.6L5.1,4.5L9,8.5L8.5,9L4.5,5.1L0.6,9L0,8.5L4,4.5L0,0.6L0.6,0L4.5,4L8.5,0z\"\/><\/g><\/svg>" } };
-    /* ]]> */
-  </script>
   <script src="wp-content/plugins/qi-addons-for-elementor/assets/js/main.minb6a4.js?ver=6.6.1"
     id="qi-addons-for-elementor-script-js"></script>
   <script
@@ -5329,9 +5238,9 @@
   </script>
   <script src="wp-content/themes/coppola/assets/js/main.minb6a4.js?ver=6.6.1"
     id="coppola-main-js-js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsjphsoGH4-ltuAQuGck2nAXhYdjNm-d8&amp;callback=qodefEmptyCallback&amp;ver=6.6.1"
-    id="google-map-api-js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsjphsoGH4-ltuAQuGck2nAXhYdjNm-d8" async defer></script>
+
   <script src="wp-includes/js/underscore.mind584.js?ver=1.13.4" id="underscore-js"></script>
   <script src="wp-content/plugins/coppola-core/inc/maps/assets/js/custom-markerb6a4.js?ver=6.6.1"
     id="coppola-core-map-custom-marker-js"></script>
@@ -5540,10 +5449,6 @@
 	<div class="rbt-toolbar" data-theme="Leitmotif" data-featured data-button-position="75%"
 		data-button-horizontal="right" data-button-alt="no"></div>
 
-
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T772QJ" height="0" width="0"
-			style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
-	<script type="text/html" id="wpb-modifications"></script>
 	<link
 		href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700%7CRoboto+Mono:400%7CRoboto:400&amp;display=swap"
 		rel="stylesheet" property="stylesheet" media="all" >
@@ -5732,9 +5637,7 @@
 	<script
 		src="wp-content/themes/leitmotif/assets/js/modules/plugins/jquery.mousewheel.minbfbf.js?ver=6.0.9"
 		id="mousewheel-js"></script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJyNVBBHStm1myzUxVu9sNvdxMuI6MP9o&amp;ver=6.0.9"
-		id="leitmotif-edge-google-map-api-js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsjphsoGH4-ltuAQuGck2nAXhYdjNm-d8" async defer></script>
 	<script id="leitmotif-edge-modules-js-extra">
 		/* <![CDATA[ */
 		var edgtfGlobalVars = { "vars": { "edgtfAddForAdminBar": 0, "edgtfElementAppearAmount": -100, "edgtfAjaxUrl": "https:\/\/leitmotif.qodeinteractive.com\/wp-admin\/admin-ajax.php", "sliderNavPrevArrow": "prev", "sliderNavNextArrow": "next", "ppExpand": "Expand the image", "ppNext": "Next", "ppPrev": "Previous", "ppClose": "Close", "edgtfStickyHeaderHeight": 0, "edgtfStickyHeaderTransparencyHeight": 90, "edgtfTopBarHeight": 0, "edgtfLogoAreaHeight": 0, "edgtfMenuAreaHeight": 104, "edgtfMobileHeaderHeight": 70 } };
