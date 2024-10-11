@@ -1,0 +1,7 @@
+# Allow all bots to crawl everything
+User-agent: *
+Disallow:
+
+# Sitemap locations
+Sitemap: https://meffinal.netlify.app/sitemap/sitemap.xml
+Sitemap: https://meffinal.netlify.app/sitemap/index.html

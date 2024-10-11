@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home page -->
+  <url>
+    <loc>https://meffinal.netlify.app/</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Portfolio page -->
+  <url>
+    <loc>https://meffinal.netlify.app/portfolio</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About Us page -->
+  <url>
+    <loc>https://meffinal.netlify.app/aboutus</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blogs page -->
+  <url>
+    <loc>https://meffinal.netlify.app/blogs</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog 1 -->
+  <url>
+    <loc>https://meffinal.netlify.app/blogs/how-to-create-compelling-video-content-for-social-media/</loc>
+    <lastmod>2024-07-31T15:15:29+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog 2 -->
+  <url>
+    <loc>https://meffinal.netlify.app/blogs/behind-the-scenes-the-intricate-world-of-video-post-production/</loc>
+    <lastmod>2024-07-31T15:11:20+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog 3 -->
+  <url>
+    <loc>https://meffinal.netlify.app/blogs/the-ultimate-guide-to-video-production-from-concept-to-creation-a-short-version/</loc>
+    <lastmod>2024-07-31T15:01:47+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog 4 -->
+  <url>
+    <loc>https://meffinal.netlify.app/blogs/boost-your-brand-with-professional-video-production/</loc>
+    <lastmod>2024-07-30T08:25:43+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Contact Us page -->
+  <url>
+    <loc>https://meffinal.netlify.app/contactus</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Terms and Conditions page -->
+  <url>
+    <loc>https://meffinal.netlify.app/termsandconditions</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Privacy Policy page -->
+  <url>
+    <loc>https://meffinal.netlify.app/privacypolicy</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Error page -->
+  <url>
+    <loc>https://meffinal.netlify.app/404</loc>
+    <lastmod>2024-10-10</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+  <!-- Sitemap index page -->
+  <url>
+  <loc>https://meffinal.netlify.app/sitemap/index.html</loc>
+  <lastmod>2024-10-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+</urlset>
+
