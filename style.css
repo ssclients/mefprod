@@ -432,7 +432,7 @@
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url("img/home-actor/actor.png");
+  background-image: url("images/actor.webp");
   background-origin: padding-box;
   background-position: center center;
   background-repeat: no-repeat;
@@ -818,8 +818,8 @@ ul.gallery-menu li.active,ul.gallery-menu li:hover{color:#e2a750;}
 .home-two .trailer-titel h5 a:hover {color: #fe2d20;}
 .home-two .slide-btn a {background: #fe2d20 none repeat scroll 0 0;}
 .home-two .slide-content h2 span,.home-two .slide-content h1 span {color: #fe2d20;}
-.home-two .slider-area .owl-theme .owl-dots .owl-dot.active span{background: rgba(0, 0, 0, 0) url("img/home-two/icon/dot-active.png") no-repeat scroll 0 0;}
-.home-two .slider-area .owl-theme .owl-dots .owl-dot span {background: rgba(0, 0, 0, 0) url("img/home-two/icon/dot.png") no-repeat scroll 0 0;} */
+.home-two .slider-area .owl-theme .owl-dots .owl-dot.active span{background: rgba(0, 0, 0, 0) url("images/dot-active.webp") no-repeat scroll 0 0;}
+.home-two .slider-area .owl-theme .owl-dots .owl-dot span {background: rgba(0, 0, 0, 0) url("images/dot.webp") no-repeat scroll 0 0;} */
 /* About Us */
 /* .home-two .popup-youtube:hover {
   color: #aaa;
@@ -957,7 +957,7 @@ ul.gallery-menu li.active,ul.gallery-menu li:hover{color:#e2a750;}
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url("img/home-actor/actor-2.png");
+  background-image: url("./images/actor-2.webp");
   background-origin: padding-box;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1022,18 +1022,18 @@ ul.gallery-menu li.active,ul.gallery-menu li:hover{color:#e2a750;}
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url("img/home-pro/next-1.png");
+  background-image: url("images/next-1.webp");
   background-origin: padding-box;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100px;
 }
-.production .owl-carousel .owl-nav .owl-next:hover {background-image: url("img/home-pro/next-2.png");}
+.production .owl-carousel .owl-nav .owl-next:hover {background-image: url("images/next-2.webp");}
 .production .owl-carousel .owl-nav .owl-prev {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url("img/home-pro/prev-1.png");
+  background-image: url("images/prev-1.webp");
   background-origin: padding-box;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1042,7 +1042,7 @@ ul.gallery-menu li.active,ul.gallery-menu li:hover{color:#e2a750;}
   transform: translate(-100px);
   width: 100px;
 }
-.production .owl-carousel .owl-nav .owl-prev:hover {background-image: url("img/home-pro/prev-2.png");}
+.production .owl-carousel .owl-nav .owl-prev:hover {background-image: url("images/prev-2.webp");}
 .production:hover .owl-theme .owl-nav [class*="owl-"]{opacity:1;visibility:visible;}
 .production .owl-theme .owl-nav [class*="owl-"] i {
   font-size: 42px;
@@ -1249,7 +1249,7 @@ ul.gallery-menu li.active,ul.gallery-menu li:hover{color:#e2a750;}
   display: none;
 }
 .subscribe-form form .submit-button input {
-  background: rgba(0, 0, 0, 0) url("img/home-pro/news.png") no-repeat scroll center center;
+  background: rgba(0, 0, 0, 0) url("images/news.webp") no-repeat scroll center center;
   border: medium none;
   cursor: pointer;
   height: 50px;
@@ -1944,7 +1944,7 @@ ul.gallery-menu li.active,ul.gallery-menu li:hover{color:#e2a750;}
 }
 /* ============= 20. 404 Error ============= */
 .outerwrap-404 {
-  background-image: url("img/home-one/slider/1.png");
+  background-image: url("images/1.webp");
   background-size: cover;
   bottom: 0;
   height: 100%;

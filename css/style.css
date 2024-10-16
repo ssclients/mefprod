@@ -387,7 +387,7 @@ a {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url("../image/image-1920x900-1.jpg");
+    background-image: url("../images/image-1920x900-1.webp");
     background-position: center center;
     background-size: cover;
     filter: brightness(41%) contrast(91%) saturate(0%) blur(0px) hue-rotate(0deg);
@@ -399,7 +399,7 @@ a {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url("../image/image-600x400-6.jpg");
+    background-image: url("../images/image-600x400-6.webp");
     background-position: center center;
     background-size: cover;
     filter: brightness(41%) contrast(91%) saturate(0%) blur(0px) hue-rotate(0deg);
@@ -411,7 +411,7 @@ a {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url("../image/image-1920x900-8.jpg");
+    background-image: url("../images/image-1920x900-8.webp");
     background-position: center center;
     background-size: cover;
     filter: brightness(41%) contrast(91%) saturate(0%) blur(0px) hue-rotate(0deg);
@@ -423,7 +423,7 @@ a {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url("../image/image-600x400-6.jpg");
+    background-image: url("../images/image-600x400-6.webp");
     background-position: center center;
     background-size: cover;
     filter: brightness(41%) contrast(91%) saturate(0%) blur(0px) hue-rotate(0deg);
@@ -435,7 +435,7 @@ a {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url("../image/liquifer.png");
+    background-image: url("../images/liquifer.webp");
     background-position: center center;
     background-size: cover;
     opacity: 0.05;
